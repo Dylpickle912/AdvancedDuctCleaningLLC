@@ -1,0 +1,97 @@
+@import '../../variables';
+
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: minmax(0, 50%) repeat(3, minmax(0, max-content));
+  grid-template-areas: 'logo reviews scam buttons';
+  justify-content: space-between;
+
+  .logo {
+    grid-area: logo;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .reviews {
+    grid-area: reviews;
+  }
+
+  .scam {
+    grid-area: scam;
+  }
+
+  .buttons {
+    grid-area: buttons;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    row-gap: 5px;
+
+    .button {
+      display: flex;
+      justify-content: center;
+      column-gap: 5px;
+      flex-wrap: wrap;
+      width: 180px;
+      padding: 8px 2px;
+      border-radius: 4px;
+      border: 2px solid white;
+      font: {
+        size: 14px;
+        weight: 700;
+      }
+      color: white;
+      @include textShadow;
+      @include boxShadow;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+
+      &.blue {
+        @include blueGradient;
+      }
+
+      &.red {
+        @include redGradient;
+
+        .circle {
+          display: grid;
+          width: 14px;
+          height: 14px;
+          place-items: center;
+          background-color: white;
+          border-radius: 50%;
+
+          i {
+            text-shadow: none;
+            box-shadow: none;
+            @include redGradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $secondBreak) {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .logo {
+      width: 100%;
+    }
+
+    .reviews,
+    .scam,
+    .buttons {
+      display: none;
+    }
+  }
+}

@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/Images/fac_background.png');
+  background-position: center 15%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 12px;
+}
+
+body,
+input,
+textarea,
+select {
+  font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
+}

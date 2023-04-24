@@ -1,0 +1,18 @@
+$firstBreak: 1200px;
+$secondBreak: 980px;
+
+@mixin blueGradient() {
+  background: linear-gradient(180deg, #2b87da 0%, #1873c9 100%);
+}
+
+@mixin redGradient() {
+  background: linear-gradient(180deg, #ea2e2e 0%, #c12d17 100%);
+}
+
+@mixin textShadow() {
+  text-shadow: 0.08em 0.08em 0.08em rgba(0, 0, 0, 0.4);
+}
+
+@mixin boxShadow() {
+  box-shadow: 0 5px 11px -6 rgba(0, 0, 0, 0.3);
+}
