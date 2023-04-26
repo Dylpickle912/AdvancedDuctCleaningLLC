@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #002668;
+  background-color: #1b70ba;
+  background: linear-gradient(180deg, #1b70ba, #1c5eb5);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1b70ba), color-stop(50%, #1b70ba), color-stop(50%, #1c5eb5));
+  background: -webkit-linear-gradient(top, #1b70ba, #1c5eb5);
+  background: -moz-linear-gradient(top, #1b70ba, #1c5eb5);
+  background: -ms-linear-gradient(top, #1b70ba, #1c5eb5);
+  background: -o-linear-gradient(top, #1b70ba, #1c5eb5);
+  -webkit-box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+
+
+.link {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  align-items: center;
+  padding: 15px 30px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+
+  p {
+    color: #d9d9d9;
+    text-transform: uppercase;
+    font: {
+      weight: bold;
+      size: 13px;
+    };
+  }
+
+  &:hover {
+    background-color: #1857a0;
+
+    p,
+    i {
+      color: white;
+    }
+
+    .dropdownMenu {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &:not(:first-child) {
+    border-left: 1px solid #0050ad;
+    box-shadow: inset 1px 0 0 0 rgba(255, 255, 255, 0.1);
+  }
+
+  i {
+    color: #d9d9d9;
+  }
+
+  .dropdownMenu {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    transition: visibility .2s, opacity .2s ease-in;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: max-content;
+
+    .item {
+      color: #888;
+      text-align: left;
+      user-select: none;
+      padding: 15px 20px;
+      font: {
+        size: 12px;
+        weight: 700;
+      }
+      transition: color .2s;
+
+      &:hover {
+        color: #111;
+      }
+    }
+  }
+}
