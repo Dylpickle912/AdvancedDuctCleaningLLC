@@ -1,3 +1,10 @@
+$primary: #1b70ba;
+$primaryMedium: #1c5eb5;
+$primaryDark: #1857a0;
+$white: #fff;
+$offWhite: #eee;
+$lGrey: rgba(0, 0, 0, 0.1);
+
 $firstBreak: 1200px;
 $secondBreak: 980px;
 
@@ -15,4 +22,12 @@ $secondBreak: 980px;
 
 @mixin boxShadow() {
   box-shadow: 0 5px 11px -6 rgba(0, 0, 0, 0.3);
+}
+
+@mixin insetBoxShadow() {
+  box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+@mixin border() {
+  outline: 1px solid black;
 }

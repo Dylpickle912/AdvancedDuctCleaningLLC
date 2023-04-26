@@ -1,10 +1,10 @@
-<div class="container">
+<div class="container desktop">
   <div class="link">
-    <p>Home</p>
+    <p class="linkLabel">Home</p>
   </div>
   <div class="link">
-    <p>Our Company</p>
-    <i class="fa-xs fa-solid fa-angle-down"></i>
+    <p class="linkLabel">Our Company</p>
+    <i class="caret fa-xs fa-solid fa-angle-down"></i>
     <div class="dropdownMenu">
       <div class="item">Our Company</div>
       <div class="item">Steps to a Professional Air Duct Cleaning</div>
@@ -12,15 +12,52 @@
     </div>
   </div>
   <div class="link">
-    <p>Why Clean Air Ducts</p>
+    <p class="linkLabel">Why Clean Air Ducts</p>
   </div>
   <div class="link">
-    <p>Video Resource Center</p>
+    <p class="linkLabel">Video Resource Center</p>
   </div>
   <div class="link">
-    <p>PIP Network</p>
+    <p class="linkLabel">PIP Network</p>
   </div>
   <div class="link">
-    <p>Contact Us</p>
+    <p class="linkLabel">Contact Us</p>
+  </div>
+</div>
+
+<div class="mobileContainer">
+  <div class="accordionTab" (click)="toggleShowMenu()">
+    <i class="accordionIcon fa-sharp fa-solid fa-bars"></i>
+    <p class="accordionText">Menu</p>
+  </div>
+  <div class="container" [ngClass]="{ 'containerActive': showMenu }">
+    <div class="link">
+      <p class="linkLabel">Home</p>
+    </div>
+    <div class="link" (click)="toggleShowOurCompanyMenu()">
+      <p class="linkLabel">Our Company</p>
+      <i class="caret fa-xs fa-solid fa-angle-down"></i>
+      <div class="dropdownMenu" [ngClass]="{ 'dropdownMenuActive': showOurCompanyMenu }" (click)="$event.stopPropagation()">
+        <div class="item">Our Company</div>
+        <div class="item">Steps to a Professional Air Duct Cleaning</div>
+        <div class="item">Fresh Air Corp Before and After Air Duct Cleaning</div>
+        <div class="item close" (click)="showOurCompanyMenu = false">
+          <i class="fa-solid fa-xmark"></i>
+          <p>Close</p>
+        </div>
+      </div>
+    </div>
+    <div class="link">
+      <p class="linkLabel">Why Clean Air Ducts</p>
+    </div>
+    <div class="link">
+      <p class="linkLabel">Video Resource Center</p>
+    </div>
+    <div class="link">
+      <p class="linkLabel">PIP Network</p>
+    </div>
+    <div class="link">
+      <p class="linkLabel">Contact Us</p>
+    </div>
   </div>
 </div>
