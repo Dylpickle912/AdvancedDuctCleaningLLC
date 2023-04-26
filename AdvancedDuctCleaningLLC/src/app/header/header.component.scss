@@ -6,6 +6,7 @@
   grid-template-columns: minmax(0, 50%) repeat(3, minmax(0, max-content));
   grid-template-areas: 'logo reviews scam buttons';
   justify-content: space-between;
+  align-items: center;
 
   .logo {
     grid-area: logo;
