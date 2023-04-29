@@ -1,0 +1,211 @@
+@import '../../../variables';
+
+.carouselContainer {
+  width: 100%;
+  height: 540px;
+  background-color: dodgerblue;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    .arrow {
+      &.prevButton {
+        left: 22px;
+      }
+      &.nextButton {
+        right: 22px;
+      }
+    }
+  }
+
+  .slider {
+    width: 100%;
+    height: 100%;
+
+    .slide {
+      display: grid !important;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+
+    i {
+      font-size: 24px;
+      color: $primaryDark;
+    }
+
+    &.prevButton {
+      left: -22px;
+      transition: left .2s;
+    }
+
+    &.nextButton {
+      right: -22px;
+      transition: right .2s;
+    }
+  }
+}
+
+.slide1 {
+  padding: 25px;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-self: center;
+    align-self: flex-end;
+    row-gap: 15px;
+    justify-content: center;
+    @include fadeUpAnimation;
+
+    p {
+      text-align: center;
+      color: white;
+      font: {
+        size: 32px;
+        weight: bold;
+      }
+    }
+
+    .iframeContainer {
+      width: 100%;
+      position: relative;
+      padding-top: 55%;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid white;
+      }
+    }
+  }
+}
+
+.slide2 {
+  padding: 25px;
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    justify-self: center;
+    align-self: flex-end;
+    row-gap: 15px;
+    justify-content: center;
+    justify-items: center;
+    @include fadeUpAnimation;
+    text-align: center;
+
+    .title {
+      font: {
+        family: Anton;
+        size: 53px;
+        weight: bold;
+      }
+      line-height: 53px;
+      color: $primary;
+    }
+
+    .subtitle {
+      font: {
+        size: 24px;
+        weight: bold;
+      }
+      color: $primary;
+    }
+  }
+}
+
+.slide3 {
+  padding: 25px 75px;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-self: flex-start;
+    align-self: flex-end;
+    row-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    @include fadeUpAnimation;
+    text-align: center;
+
+    .title {
+      font: {
+        size: 35px;
+        weight: bold;
+      }
+      line-height: 35px;
+      color: white;
+    }
+
+    .subtitle {
+      font: {
+        size: 22px;
+        weight: bold;
+      }
+      line-height: 22px;
+      color: white;
+    }
+  }
+}
+
+.slide4 {
+  padding: 25px;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-self: flex-start;
+    align-self: flex-end;
+    row-gap: 15px;
+    justify-content: center;
+    justify-items: center;
+    @include fadeUpAnimation;
+    text-align: center;
+
+    .title {
+      font: {
+        size: 35px;
+        weight: bold;
+      }
+      line-height: 35px;
+      color: white;
+      @include textShadow;
+    }
+  }
+}
+
+button {
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  background-image: linear-gradient(180deg, #e02b20 0%, #992020 100%);
+  padding: 0 1em;
+  @include textShadow;
+  @include boxShadow;
+  line-height: 1.7em;
+  border: 2px solid white;
+  cursor: pointer;
+  width: max-content;
+  @include alignCenter;
+}
