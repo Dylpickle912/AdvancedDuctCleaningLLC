@@ -1,0 +1,26 @@
+@import '../../variables';
+
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 18px 20px;
+  border-radius: 8px;
+  background-color: $white;
+  column-gap: 30px;
+
+  @media only screen and (max-width: 850px) {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 15px;
+  }
+
+  a {
+    width: 100%;
+    height: max-content;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -11,6 +11,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FormsModule} from "@angular/forms";
 import { VideoResourcesComponent } from './video-resources/video-resources.component';
 import { VideoResourcesCarouselComponent } from './video-resources/video-resources-carousel/video-resources-carousel.component';
+import { FooterAdditionalInfoComponent } from './footer-additional-info/footer-additional-info.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { VideoResourcesCarouselComponent } from './video-resources/video-resourc
     HomeComponent,
     NotFoundComponent,
     VideoResourcesComponent,
-    VideoResourcesCarouselComponent
+    VideoResourcesCarouselComponent,
+    FooterAdditionalInfoComponent
   ],
   imports: [
     BrowserModule,
