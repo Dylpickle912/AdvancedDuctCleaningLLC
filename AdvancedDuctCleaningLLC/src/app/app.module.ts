@@ -12,6 +12,7 @@ import {FormsModule} from "@angular/forms";
 import { VideoResourcesComponent } from './video-resources/video-resources.component';
 import { VideoResourcesCarouselComponent } from './video-resources/video-resources-carousel/video-resources-carousel.component';
 import { FooterAdditionalInfoComponent } from './footer-additional-info/footer-additional-info.component';
+import { OurCompanyComponent } from './pages/our-company/our-company.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterAdditionalInfoComponent } from './footer-additional-info/footer-a
     NotFoundComponent,
     VideoResourcesComponent,
     VideoResourcesCarouselComponent,
-    FooterAdditionalInfoComponent
+    FooterAdditionalInfoComponent,
+    OurCompanyComponent
   ],
   imports: [
     BrowserModule,

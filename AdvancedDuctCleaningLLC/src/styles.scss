@@ -39,3 +39,31 @@ select {
   animation-duration: 1s;
   opacity: 1;
 }
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  row-gap: 10px;
+
+  .heading {
+    display: grid;
+    width: 100%;
+    padding: 0 55px;
+
+    h2 {
+      font: {
+        size: 22px;
+        weight: 600;
+      }
+      color: $nearBlack;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

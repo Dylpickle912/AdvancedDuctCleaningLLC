@@ -1,0 +1,56 @@
+@import '../../../variables';
+
+.our-company-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  column-gap: 30px;
+
+  @media only screen and (max-width: 950px) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .info {
+    font: {
+      size: 14px;
+      weight: 700;
+    }
+    line-height: 1.7em;
+    color: $grey;
+
+    img {
+      width: 115px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      float: left;
+    }
+
+    span,
+    p,
+    ul {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 15px;
+    }
+
+    p {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}
