@@ -37,11 +37,26 @@ a {
   height: 100%;
 }
 
+.slick-active .slide .image {
+  animation-name: fadeInRightSD;
+  -webkit-animation-name: fadeInRightSD;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
 .slick-active .slide .info {
   animation-name: fadeInUpSD;
   -webkit-animation-name: fadeInUpSD;
   animation-duration: 1s;
   opacity: 1;
+}
+
+h2 {
+  font: {
+    size: 22px;
+    weight: 600;
+  }
+  color: $nearBlack;
 }
 
 .pageContainer {
@@ -56,14 +71,6 @@ a {
     display: grid;
     width: 100%;
     padding: 0 55px;
-
-    h2 {
-      font: {
-        size: 22px;
-        weight: 600;
-      }
-      color: $nearBlack;
-    }
   }
 
   .content {

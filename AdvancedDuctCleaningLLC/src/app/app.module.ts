@@ -13,6 +13,7 @@ import { VideoResourcesComponent } from './video-resources/video-resources.compo
 import { VideoResourcesCarouselComponent } from './video-resources/video-resources-carousel/video-resources-carousel.component';
 import { FooterAdditionalInfoComponent } from './footer-additional-info/footer-additional-info.component';
 import { OurCompanyComponent } from './pages/our-company/our-company.component';
+import { StepsComponent } from './pages/steps/steps.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { OurCompanyComponent } from './pages/our-company/our-company.component';
     VideoResourcesComponent,
     VideoResourcesCarouselComponent,
     FooterAdditionalInfoComponent,
-    OurCompanyComponent
+    OurCompanyComponent,
+    StepsComponent
   ],
   imports: [
     BrowserModule,
