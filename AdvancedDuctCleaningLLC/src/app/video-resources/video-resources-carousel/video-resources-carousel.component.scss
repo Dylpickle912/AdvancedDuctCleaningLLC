@@ -1,0 +1,27 @@
+@import '../../../variables';
+
+.carouselContainer {
+  width: 100%;
+  height: 113px;
+  position: relative;
+  overflow: hidden;
+  background-color: $white;
+
+  ::ng-deep {
+    .slick-track {
+      display: flex !important;
+      column-gap: 5px;
+    }
+  }
+
+  .slide {
+    height: 100%;
+    width: max-content;
+    cursor: pointer;
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+}

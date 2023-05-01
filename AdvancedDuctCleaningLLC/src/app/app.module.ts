@@ -9,6 +9,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FormsModule} from "@angular/forms";
+import { VideoResourcesComponent } from './video-resources/video-resources.component';
+import { VideoResourcesCarouselComponent } from './video-resources/video-resources-carousel/video-resources-carousel.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import {FormsModule} from "@angular/forms";
     HeaderComponent,
     NavigationComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    VideoResourcesComponent,
+    VideoResourcesCarouselComponent
   ],
   imports: [
     BrowserModule,

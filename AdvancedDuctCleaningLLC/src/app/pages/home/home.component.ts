@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   public ngOnInit() {
     $('.slider').slick({
-      autoplay: false,
+      autoplay: true,
       arrows: true,
       dots: false,
       slidesToShow: 1,
