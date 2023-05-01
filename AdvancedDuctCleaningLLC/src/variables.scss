@@ -8,6 +8,10 @@ $lGrey: rgba(0, 0, 0, 0.1);
 $firstBreak: 1200px;
 $secondBreak: 980px;
 
+@mixin blueHeaderGradient() {
+background: linear-gradient(180deg,#3c85c1 0%,#06529e 100%);
+}
+
 @mixin blueGradient() {
   background: linear-gradient(180deg, #2b87da 0%, #1873c9 100%);
 }
@@ -47,20 +51,30 @@ $secondBreak: 980px;
   margin-right: 0;
 }
 
-@mixin fadeUpAnimation {
-  animation-name: fadeUp;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-}
-
-@keyframes fadeUp {
+@-webkit-keyframes fadeInUpSD {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(100px);
     transform: translateY(100px);
   }
+
   100% {
     opacity: 1;
-    transform: translateY(0);
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }

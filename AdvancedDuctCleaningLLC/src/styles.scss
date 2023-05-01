@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap');
+@import 'variables';
 
 * {
   margin: 0;
@@ -16,7 +17,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding: 12px;
 }
 
 body,
@@ -31,4 +31,11 @@ select {
 .slick-slide,
 .slick-slide > div {
   height: 100%;
+}
+
+.slick-active .slide .info {
+  animation-name: fadeInUpSD;
+  -webkit-animation-name: fadeInUpSD;
+  animation-duration: 1s;
+  opacity: 1;
 }

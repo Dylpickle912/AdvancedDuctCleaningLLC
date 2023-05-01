@@ -68,7 +68,6 @@
     align-self: flex-end;
     row-gap: 15px;
     justify-content: center;
-    @include fadeUpAnimation;
 
     p {
       text-align: center;
@@ -109,7 +108,6 @@
     row-gap: 15px;
     justify-content: center;
     justify-items: center;
-    @include fadeUpAnimation;
     text-align: center;
 
     .title {
@@ -144,7 +142,6 @@
     row-gap: 10px;
     justify-content: center;
     justify-items: center;
-    @include fadeUpAnimation;
     text-align: center;
 
     .title {
@@ -179,7 +176,6 @@
     row-gap: 15px;
     justify-content: center;
     justify-items: center;
-    @include fadeUpAnimation;
     text-align: center;
 
     .title {
