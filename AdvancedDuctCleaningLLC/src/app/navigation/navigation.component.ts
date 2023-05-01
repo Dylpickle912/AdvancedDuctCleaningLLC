@@ -1,4 +1,5 @@
 import {Component, HostListener, OnInit} from '@angular/core';
+import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 
 @Component({
   selector: 'app-navigation',
@@ -10,8 +11,19 @@ export class NavigationComponent implements OnInit {
   public showOurCompanyMenu = false;
   public isMobile = false;
 
+  public isOurCompany = false;
+
+  constructor(private readonly router: Router,
+              private readonly activatedRoute: ActivatedRoute) { }
+
   public ngOnInit() {
     this.setIsMobile(window.innerWidth);
+    this.router.events.subscribe((e) => {
+      if (e instanceof NavigationEnd) {
+        const ourCompanyRoutes = ['/our-company', '/steps', '/before-and-after'];
+        this.isOurCompany = ourCompanyRoutes.includes(e.url)
+      }
+    })
   }
 
   @HostListener('window:resize', ['$event'])

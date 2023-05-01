@@ -1,12 +1,12 @@
 <div class="container desktop">
-  <div class="link">
+  <a class="link" [routerLink]="[ '' ]" routerLinkActive="activeLink" [routerLinkActiveOptions]="{ exact: true }">
     <p class="linkLabel">Home</p>
-  </div>
-  <div class="link">
+  </a>
+  <div class="link" [ngClass]="{ 'activeLink': isOurCompany }">
     <p class="linkLabel">Our Company</p>
     <i class="caret fa-xs fa-solid fa-angle-down"></i>
     <div class="dropdownMenu">
-      <div class="item">Our Company</div>
+      <a class="item" [routerLink]="[ '/our-company' ]" routerLinkActive="activeDropdownLink" [routerLinkActiveOptions]="{ exact: true }">Our Company</a>
       <div class="item">Steps to a Professional Air Duct Cleaning</div>
       <div class="item">Fresh Air Corp Before and After Air Duct Cleaning</div>
     </div>

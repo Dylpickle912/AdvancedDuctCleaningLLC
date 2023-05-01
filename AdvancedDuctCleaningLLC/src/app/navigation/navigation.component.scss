@@ -55,6 +55,15 @@
     }
   }
 
+  &.activeLink {
+    background-color: #1857a0;
+
+    .linkLabel,
+    .caret {
+      color: white;
+    }
+  }
+
   &:not(:first-child) {
     border-left: 1px solid #0050ad;
     box-shadow: inset 1px 0 0 0 rgba(255, 255, 255, 0.1);
@@ -90,7 +99,8 @@
       }
       transition: color .2s;
 
-      &:hover {
+      &:hover,
+      &.activeDropdownLink {
         color: #111;
       }
     }
