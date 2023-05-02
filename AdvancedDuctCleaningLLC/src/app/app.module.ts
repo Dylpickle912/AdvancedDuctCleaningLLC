@@ -14,6 +14,7 @@ import { VideoResourcesCarouselComponent } from './video-resources/video-resourc
 import { FooterAdditionalInfoComponent } from './footer-additional-info/footer-additional-info.component';
 import { OurCompanyComponent } from './pages/our-company/our-company.component';
 import { StepsComponent } from './pages/steps/steps.component';
+import { BeforeAndAfterComponent } from './pages/before-and-after/before-and-after.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { StepsComponent } from './pages/steps/steps.component';
     VideoResourcesCarouselComponent,
     FooterAdditionalInfoComponent,
     OurCompanyComponent,
-    StepsComponent
+    StepsComponent,
+    BeforeAndAfterComponent
   ],
   imports: [
     BrowserModule,

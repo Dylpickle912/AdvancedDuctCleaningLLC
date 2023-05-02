@@ -50,6 +50,40 @@ a {
   animation-duration: 1s;
   opacity: 1;
 }
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+
+  list-style-type: none;
+
+  li {
+    margin: 0 0.25rem;
+  }
+
+  button {
+    display: block;
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,.3);
+    text-indent: -9999px;
+    cursor: pointer;
+    transition: background-color .2s;
+
+    &:hover {
+      background-color: hsla(0, 0, 0, .5);
+    }
+  }
+
+  li.slick-active button {
+    background-color: $nearBlack;
+  }
+
+}
 
 h2 {
   font: {
@@ -71,6 +105,14 @@ h2 {
     display: grid;
     width: 100%;
     padding: 0 55px;
+
+    p {
+      font: {
+        size: 14px;
+        weight: 500;
+      }
+      color: $grey;
+    }
   }
 
   .content {
