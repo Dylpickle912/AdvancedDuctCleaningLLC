@@ -15,6 +15,7 @@ import { FooterAdditionalInfoComponent } from './footer-additional-info/footer-a
 import { OurCompanyComponent } from './pages/our-company/our-company.component';
 import { StepsComponent } from './pages/steps/steps.component';
 import { BeforeAndAfterComponent } from './pages/before-and-after/before-and-after.component';
+import { WhyCleanAirDuctsComponent } from './pages/why-clean-air-ducts/why-clean-air-ducts.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BeforeAndAfterComponent } from './pages/before-and-after/before-and-aft
     FooterAdditionalInfoComponent,
     OurCompanyComponent,
     StepsComponent,
-    BeforeAndAfterComponent
+    BeforeAndAfterComponent,
+    WhyCleanAirDuctsComponent
   ],
   imports: [
     BrowserModule,
