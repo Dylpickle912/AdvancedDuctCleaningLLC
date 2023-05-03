@@ -1,0 +1,60 @@
+@import '../../../variables';
+
+.content {
+  padding: 25px 35px;
+  @include alignCenter;
+  row-gap: 25px;
+
+  .title {
+    color: $nearBlack;
+    font: {
+      weight: 700;
+      size: 16px
+    }
+  }
+
+  .videoContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px 50px;
+
+    @media only screen and (max-width: 900px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media only screen and (max-width: 600px) {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .video {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      row-gap: 8px;
+
+      .iframeContainer {
+        width: 100%;
+        position: relative;
+        padding-top: 55%;
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .videoTitle {
+        color: $grey;
+        font: {
+          size: 14px;
+        }
+      }
+    }
+  }
+}

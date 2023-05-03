@@ -17,6 +17,7 @@ import { StepsComponent } from './pages/steps/steps.component';
 import { BeforeAndAfterComponent } from './pages/before-and-after/before-and-after.component';
 import { WhyCleanAirDuctsComponent } from './pages/why-clean-air-ducts/why-clean-air-ducts.component';
 import { VideoResourceCenterComponent } from './pages/video-resource-center/video-resource-center.component';
+import { BecomingScamProofComponent } from './pages/becoming-scam-proof/becoming-scam-proof.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { VideoResourceCenterComponent } from './pages/video-resource-center/vide
     StepsComponent,
     BeforeAndAfterComponent,
     WhyCleanAirDuctsComponent,
-    VideoResourceCenterComponent
+    VideoResourceCenterComponent,
+    BecomingScamProofComponent
   ],
   imports: [
     BrowserModule,
