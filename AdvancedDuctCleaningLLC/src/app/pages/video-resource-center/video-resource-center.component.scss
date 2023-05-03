@@ -1,0 +1,188 @@
+@import '../../../variables';
+
+.protectingYourFamilyImage {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.infoContainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 40px;
+  padding: 0 55px;
+
+  @media only screen and (max-width: 1050px) {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 25px;
+
+    .image {
+      height: 350px !important;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    padding: 0 20px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 15px;
+
+    p {
+      color: $grey;
+      font: {
+        size: 14px;
+        weight: 600;
+      }
+      line-height: 1.7em;
+    }
+
+    .field {
+      display: grid;
+      width: 100%;
+      grid-template-columns: minmax(0, 1fr) 200px;
+      column-gap: 40px;
+
+      @media only screen and (max-width: 700px) {
+        column-gap: 5px;
+        grid-template-columns: minmax(0, 1fr);
+
+        a {
+          img {
+            width: 65% !important;
+            @include alignCenter;
+          }
+        }
+      }
+
+      p {
+        width: 100%;
+      }
+
+      a {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .carousel {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .slider {
+        width: 90%;
+        height: 100%;
+        @include alignCenter;
+
+        @media only screen and (max-width: 750px) {
+          width: 100%;
+        }
+
+        .slide {
+          display: grid !important;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          width: 100%;
+          height: 100%;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          position: relative;
+          column-gap: 45px;
+          align-items: center;
+
+          @media only screen and (max-width: 750px) {
+            padding-top: 45%;
+            grid-template-columns: minmax(0, 1fr);
+            grid-template-rows: repeat(2, max-content);
+            row-gap: 25px;
+          }
+
+          .image {
+            width: 100%;
+            display: grid;
+            height: 100%;
+            align-items: center;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .info {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            row-gap: 10px;
+
+            p {
+              color: $nearBlack;
+              font: {
+                weight: 400;
+                size: 14px;
+              }
+              line-height: 1.7em;
+            }
+
+            img {
+              @include alignCenter;
+              width: 200px;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        .arrow {
+          &.prevButton {
+            left: 22px;
+            opacity: 1;
+          }
+          &.nextButton {
+            right: 22px;
+            opacity: 1;
+          }
+        }
+      }
+
+      .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        cursor: pointer;
+
+        i {
+          font-size: 24px;
+          color: $nearBlack;
+        }
+
+        &.prevButton {
+          left: -22px;
+          opacity: 0;
+          transition: left .2s, opacity .2s;
+        }
+
+        &.nextButton {
+          right: -22px;
+          opacity: 0;
+          transition: right .2s, opacity .2s;
+        }
+      }
+    }
+  }
+}

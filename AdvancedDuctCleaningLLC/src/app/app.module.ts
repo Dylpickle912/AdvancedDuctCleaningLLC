@@ -16,6 +16,7 @@ import { OurCompanyComponent } from './pages/our-company/our-company.component';
 import { StepsComponent } from './pages/steps/steps.component';
 import { BeforeAndAfterComponent } from './pages/before-and-after/before-and-after.component';
 import { WhyCleanAirDuctsComponent } from './pages/why-clean-air-ducts/why-clean-air-ducts.component';
+import { VideoResourceCenterComponent } from './pages/video-resource-center/video-resource-center.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { WhyCleanAirDuctsComponent } from './pages/why-clean-air-ducts/why-clean
     OurCompanyComponent,
     StepsComponent,
     BeforeAndAfterComponent,
-    WhyCleanAirDuctsComponent
+    WhyCleanAirDuctsComponent,
+    VideoResourceCenterComponent
   ],
   imports: [
     BrowserModule,
