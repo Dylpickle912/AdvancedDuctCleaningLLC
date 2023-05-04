@@ -19,6 +19,8 @@ import { WhyCleanAirDuctsComponent } from './pages/why-clean-air-ducts/why-clean
 import { VideoResourceCenterComponent } from './pages/video-resource-center/video-resource-center.component';
 import { BecomingScamProofComponent } from './pages/becoming-scam-proof/becoming-scam-proof.component';
 import { IndoorAirAndYourHealthComponent } from './pages/indoor-air-and-your-health/indoor-air-and-your-health.component';
+import { PartnersInProtectionComponent } from './pages/partners-in-protection/partners-in-protection.component';
+import {MatExpansionModule} from "@angular/material/expansion";
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { IndoorAirAndYourHealthComponent } from './pages/indoor-air-and-your-hea
     WhyCleanAirDuctsComponent,
     VideoResourceCenterComponent,
     BecomingScamProofComponent,
-    IndoorAirAndYourHealthComponent
+    IndoorAirAndYourHealthComponent,
+    PartnersInProtectionComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,7 @@ import { IndoorAirAndYourHealthComponent } from './pages/indoor-air-and-your-hea
     AppRoutingModule,
     BrowserAnimationsModule,
     HammerModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

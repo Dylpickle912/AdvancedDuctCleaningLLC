@@ -1,0 +1,186 @@
+<div class="pageContainer">
+  <div class="content">
+    <div class="imageVideoContainer">
+      <img src="assets/Images/PIP-collage3.png" alt="Partners in Protection">
+      <video controls>
+        <source src="assets/FAC_PIP_Draft3.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="accordionListContainer">
+      <mat-expansion-panel [hideToggle]="true" (expandedChange)="isOpen1 = !isOpen1">
+        <mat-expansion-panel-header>
+          <div class="header">
+            <h5>What is Partners in Protection?</h5>
+            <div class="circle">
+              <ng-container *ngIf="!isOpen1">+</ng-container>
+              <ng-container *ngIf="isOpen1">-</ng-container>
+            </div>
+          </div>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <div class="content">
+            <ol><strong><li>What is the basic concept of Partners in Protection?</li></strong></ol>
+            <p>
+              The PIP program is a simple, non-intrusive way for service companies to refer Fresh Air Corp for the air duct cleaning needs of their customers.  There is no paperwork, tax liability, or income reporting required. Fresh Air manages all aspects of contact, sales, scheduling, and payment.
+            </p>
+            <ol start="2"><strong><li>How does the "Rewards" system work?</li></strong></ol>
+            <p>
+              Every time a prospect purchases an air duct cleaning, the person from the partner company who originally referred them receives a $50 gift card upon completion of the service.
+            </p>
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+      <mat-expansion-panel [hideToggle]="true" (expandedChange)="isOpen2 = !isOpen2">
+        <mat-expansion-panel-header>
+          <div class="header">
+            <h5>How does PIP Benefit My Company?</h5>
+            <div class="circle">
+              <ng-container *ngIf="!isOpen2">+</ng-container>
+              <ng-container *ngIf="isOpen2">-</ng-container>
+            </div>
+          </div>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <div class="content">
+            <ol><strong><li>How does partnering with Fresh Air Corp help my company?</li></strong></ol>
+            <p>
+              Your customers trust you and appreciate you being a resource for other quality contractors.  In addition, they will not be calling your competition seeking the service. Further, the relationship with Fresh Air Corp affirms the quality and professionalism your company demands.
+            </p>
+            <ol start="2"><strong><li>Why would our company be a good fit for the program?</li></strong></ol>
+            <p>
+              If during the normal process of your service you either reveal, create, or compliment the need for air duct cleaning the PIP program can be a profitable partnership.
+            </p>
+            <ol style="padding-left: 25px;">
+              <li><strong>Reveal:</strong> IE an HVAC technician servicing the system notices the dirty ducts</li>
+              <li><strong>Create:</strong> IE a remodeling contractor doing demolition or installing drywall</li>
+              <li><strong>Compliment:</strong> IE a maid or carpet cleaner being asked by their customer</li>
+            </ol>
+            <ol start="3"><strong><li>Does Fresh Air Corp compete with us?</li></strong></ol>
+            <p>
+              No!  Fresh Air offers one service – air duct cleaning – and does not compete with providers of other services.  We do not clean the A-coil or drip pan inside the air handler, but recommend that those elements be cleaned by a licensed HVAC contractor.  We don’t sell filters, UV lights, or any system add-ons.
+            </p>
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+      <mat-expansion-panel [hideToggle]="true" (expandedChange)="isOpen3 = !isOpen3">
+        <mat-expansion-panel-header>
+          <div class="header">
+            <h5>Why is Fresh Air Your Best Choice?</h5>
+            <div class="circle">
+              <ng-container *ngIf="!isOpen3">+</ng-container>
+              <ng-container *ngIf="isOpen3">-</ng-container>
+            </div>
+          </div>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <div class="content">
+            <ol><strong><li>How does your equipment compare to other duct cleaners?</li></strong></ol>
+            <p>
+              Most air duct cleaning ads are from carpet cleaners or HVAC contractors using small portable vacs or carpet cleaning vans, neither of which provide the power needed to properly clean air duct systems. Fresh Air Corp’s industrial vacuum trucks and high-pressure scrubbing tools give us the massive air flow and surface agitation required to deep clean both small and large duct systems.
+            </p>
+            <ol start="2"><strong><li>Do you adhere to honest and ethical standards?</li></strong></ol>
+            <p>
+              YES – Check us out on the BBB, Yelp, and Google reviews to see our dozens of 5-star reviews.  We provide confirmed quotes right over the phone, include all three stages of our deep-clean process in every job,and provide a no-questions asked – 100% satisfaction guarantee.  There is no Bait-&-Switch – ever!
+            </p>
+            <ol start="3"><strong><li>How do you determine the price of residential?</li></strong></ol>
+            <p>
+              Our staff asks each homeowner several questions about the HVAC system.  We confirm the total square footage of the structure, number of furnaces, and geographic location.  A price is then quoted.  We never start with a low-ball figure and then try to up-sell on the job.  The quote given on the phoneis the total and confirmed price.
+            </p>
+            <ol start="4"><strong><li>What do you mean by "All-Inclusive" pricing?</li></strong></ol>
+            <p>
+              Our cleaning process consists of three stages.  First, we clean the supply and return side of the duct system; next, we clean the furnace interior; and finally, we treat the main lines with a green, plant-based disinfectant.  Everything is included with every quote.
+            </p>
+            <p>
+              NOTE: From time-to-time a prospect will ask if there is any discount provided because they were referred by your company.  We tell them yes, that as your customer we will include the furnace interior and disinfectant at no additional charge.  There is no discounted price for being a PIP referral.
+            </p>
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+      <mat-expansion-panel [hideToggle]="true" (expandedChange)="isOpen4 = !isOpen4">
+        <mat-expansion-panel-header>
+          <div class="header">
+            <h5>How Does My Staff Engage a Prospect?</h5>
+            <div class="circle">
+              <ng-container *ngIf="!isOpen4">+</ng-container>
+              <ng-container *ngIf="isOpen4">-</ng-container>
+            </div>
+          </div>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <div class="content">
+            <ol><strong><li>What does an office staff member say to a prospect inquiry?</li></strong></ol>
+            <p>
+              We have learned that it is best to not try and explain our cleaning process or pricing. The best response is “We don’t offer air duct cleaning, but partner with Fresh Air Corp, one of Ohio’s leading companies. Would it be OK if we had them give you a call, answer any questions, and provide a no-obligation quote?”
+            </p>
+            <ol start="2"><strong><li>Should I give the caller Fresh Air Corp's number?</li></strong></ol>
+            <p>
+              No, not unless they insist. Our studies have shown that over 60% of those who must make another phone call will not do so. Instead, simply ask them for their number and assure them there is no obligation and no pressure to buy. You can then call us, use our PIP app, or send an email to share their name, phone number, and address with us.  We will normally respond within 5 to 10 minutes.
+            </p>
+            <ol start="3"><strong><li>What's the best way to send the prospect's number to Fresh Air?</li></strong></ol>
+            <p>There are four simple ways to contact us:</p>
+            <ol style="padding-left: 25px">
+              <li>Call our office - (614) 322-3828</li>
+              <li>Send an email - <a href="mailto:email@email.com">quote@freshaircorp.com</a></li>
+              <li>Our web site - Click on the red "Free Quote" button in the upper right corner</li>
+              <li>Use the PIP app on your smart phone. Please call / email us for the PIP app downloading instructions.</li>
+              <li>What does my tech say to a prospect at their home?</li>
+            </ol>
+            <p>
+              Don’t try to explain our process or pricing. Just before leaving, mention the need for the cleaning and say “We don’t offer air duct cleaning, but partner with Fresh Air Corp, one of the Ohio’s leading air duct cleaning companies. Would it be OK if they called you to answer any questions and provide you with a no-obligation quote?”
+            </p>
+            <ol start="4"><strong><li>How do we use the printed material?</li></strong></ol>
+            <p>
+              The post cards and business cards are used only if the customer insists on calling Fresh Air Corp themselves. We feel strongly that simply giving them the material will most likely not result in them calling us. They weren’t thinking about duct cleaning before you arrived, and will probably forget about it immediately after you leave. If you are in need of additional printed materials from us, please contact us.
+            </p>
+            <ol start="5"><strong><li>The Most Important Thing...</li></strong></ol>
+            <p>
+              We will talk to more of your referrals if you convince them that allowing us to call is the simplest and safest next step. Any information you provide about our process or pricing will only muddy the water. Please assure them that it’s absolutely no big thing, the call will answer all their questions, and there is no obligation whatsoever.
+            </p>
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+      <mat-expansion-panel [hideToggle]="true" (expandedChange)="isOpen5 = !isOpen5">
+        <mat-expansion-panel-header>
+          <div class="header">
+            <h5>How Does the Rewards Program Work?</h5>
+            <div class="circle">
+              <ng-container *ngIf="!isOpen5">+</ng-container>
+              <ng-container *ngIf="isOpen5">-</ng-container>
+            </div>
+          </div>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <div class="content">
+            <ol><strong><li>How does Fresh Air track my referrals?</li></strong></ol>
+            <p>
+              We begin by creating your company profile, which includes a list of employees and their positions (ex. office staff, service tech, etc.) and their choice of gift cards. We occasionally check in to stay current on any updates to staff and gift card preferences.  Every prospect is permanently linked to the referring staff member and all communication with that prospect is recorded.
+            </p>
+            <ol start="2"><strong><li>How do I <u>earn</u> the $50 gift card?</li></strong></ol>
+            <p>
+              When your referral is contacted, we provide a brief overview of the cleaning process, answer their questions, and provide a confirmed quote for the service. If they schedule an air duct cleaning, your $50 reward is activated. When the job is completed and paid for, your gift card is set aside for mailing to your company mailing address, or otherwise preferred location.
+            </p>
+            <ol start="3"><strong><li>When do I <u>receive</u> my PIP rewards gift card?</li></strong></ol>
+            <p>
+              Every two weeks, our office prepares the PIP Update, which lists all of your latest referrals.  This report lists the name, address, and current status of each.  For each completed job, the rewards gift card is also attached.  We monitor each step of the process, track the details, and keep you current with your referrals.
+            </p>
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+      <div class="additionalContainer">
+        <div class="info">
+          <h2>We start with the best equipment!</h2>
+          <p>
+            In the world of air duct cleaning, equipment is
+            one of the key ingredients to deep cleaning vs.
+            making some noise. While most companies use small
+            portable machines or carpet cleaning vans, Fresh
+            Air Corp has invested in commercial “Monster
+            Vacs” to provide in-depth cleaning and a clean,
+            dust free environment.
+          </p>
+        </div>
+        <div class="image" style="background-image: url('assets/Images/PIP-Truck.png')"></div>
+      </div>
+    </div>
+  </div>
+</div>
