@@ -11,6 +11,9 @@ import {BecomingScamProofComponent} from "./pages/becoming-scam-proof/becoming-s
 import {IndoorAirAndYourHealthComponent} from "./pages/indoor-air-and-your-health/indoor-air-and-your-health.component";
 import {PartnersInProtectionComponent} from "./pages/partners-in-protection/partners-in-protection.component";
 import {ScamAlertComponent} from "./pages/scam-alert/scam-alert.component";
+import {
+  ContactAdvancedDuctCleaningComponent
+} from "./pages/contact-advanced-duct-cleaning/contact-advanced-duct-cleaning.component";
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent, title: 'Advanced Duct Cleaning LLC', pathMatch: 'full' },
@@ -23,6 +26,7 @@ const appRoutes: Routes = [
   { path: 'indoor-air-and-your-health', component: IndoorAirAndYourHealthComponent, title: 'Indoor Air and Your Health', pathMatch: 'full' },
   { path: 'partners-in-protection', component: PartnersInProtectionComponent, title: 'Partners in Protection', pathMatch: 'full' },
   { path: 'scam-alert', component: ScamAlertComponent, title: 'Scam Alert', pathMatch: 'full' },
+  { path: 'contact-advanced-duct-cleaning', component: ContactAdvancedDuctCleaningComponent, title: 'Contact Advanced Duct Cleaning', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent, title: 'Page Not Found', pathMatch: 'full' }
 ];
 

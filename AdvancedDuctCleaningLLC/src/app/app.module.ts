@@ -22,6 +22,7 @@ import { IndoorAirAndYourHealthComponent } from './pages/indoor-air-and-your-hea
 import { PartnersInProtectionComponent } from './pages/partners-in-protection/partners-in-protection.component';
 import {MatExpansionModule} from "@angular/material/expansion";
 import { ScamAlertComponent } from './pages/scam-alert/scam-alert.component';
+import { ContactAdvancedDuctCleaningComponent } from './pages/contact-advanced-duct-cleaning/contact-advanced-duct-cleaning.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ScamAlertComponent } from './pages/scam-alert/scam-alert.component';
     BecomingScamProofComponent,
     IndoorAirAndYourHealthComponent,
     PartnersInProtectionComponent,
-    ScamAlertComponent
+    ScamAlertComponent,
+    ContactAdvancedDuctCleaningComponent
   ],
   imports: [
     BrowserModule,
