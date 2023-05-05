@@ -21,6 +21,7 @@ import { BecomingScamProofComponent } from './pages/becoming-scam-proof/becoming
 import { IndoorAirAndYourHealthComponent } from './pages/indoor-air-and-your-health/indoor-air-and-your-health.component';
 import { PartnersInProtectionComponent } from './pages/partners-in-protection/partners-in-protection.component';
 import {MatExpansionModule} from "@angular/material/expansion";
+import { ScamAlertComponent } from './pages/scam-alert/scam-alert.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import {MatExpansionModule} from "@angular/material/expansion";
     VideoResourceCenterComponent,
     BecomingScamProofComponent,
     IndoorAirAndYourHealthComponent,
-    PartnersInProtectionComponent
+    PartnersInProtectionComponent,
+    ScamAlertComponent
   ],
   imports: [
     BrowserModule,
