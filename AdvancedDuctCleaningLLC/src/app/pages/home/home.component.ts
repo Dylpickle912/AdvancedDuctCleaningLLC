@@ -1,13 +1,16 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import * as $ from 'jquery';
 import 'slick-carousel';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class HomeComponent implements OnInit {
+
+  constructor(private readonly router: Router) { }
 
   public ngOnInit() {
     $('.slider').slick({
@@ -25,7 +28,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     });
   }
 
-  public ngOnDestroy() {
-
+  public navigateToRequestQuote(): void {
+    this.router.navigate(['/request-quote']);
   }
 }

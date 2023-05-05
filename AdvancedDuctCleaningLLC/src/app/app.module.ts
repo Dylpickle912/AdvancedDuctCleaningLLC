@@ -8,7 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { VideoResourcesComponent } from './video-resources/video-resources.component';
 import { VideoResourcesCarouselComponent } from './video-resources/video-resources-carousel/video-resources-carousel.component';
 import { FooterAdditionalInfoComponent } from './footer-additional-info/footer-additional-info.component';
@@ -23,6 +23,12 @@ import { PartnersInProtectionComponent } from './pages/partners-in-protection/pa
 import {MatExpansionModule} from "@angular/material/expansion";
 import { ScamAlertComponent } from './pages/scam-alert/scam-alert.component';
 import { ContactAdvancedDuctCleaningComponent } from './pages/contact-advanced-duct-cleaning/contact-advanced-duct-cleaning.component';
+import { RequestQuoteComponent } from './pages/request-quote/request-quote.component';
+import {MatInputModule} from "@angular/material/input";
+import {MatSelectModule} from "@angular/material/select";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {HttpClientModule} from "@angular/common/http";
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +49,9 @@ import { ContactAdvancedDuctCleaningComponent } from './pages/contact-advanced-d
     IndoorAirAndYourHealthComponent,
     PartnersInProtectionComponent,
     ScamAlertComponent,
-    ContactAdvancedDuctCleaningComponent
+    ContactAdvancedDuctCleaningComponent,
+    RequestQuoteComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +59,12 @@ import { ContactAdvancedDuctCleaningComponent } from './pages/contact-advanced-d
     AppRoutingModule,
     BrowserAnimationsModule,
     HammerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

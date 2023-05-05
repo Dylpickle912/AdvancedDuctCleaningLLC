@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl95TlyPi3UG6/jiIzYrmwQAAAAACAAAAAAAQZgAAAAEAACAAAABUK8NUiV+syoRcXGz+DvYHTp+vAW1O+vGNP5UaZ80UvgAAAAAOgAAAAAIAACAAAAD20AV5hTluztP7vNdL0CvY5GV18AWES8hXa4BaMG3y2jAAAAAN3M8TJhudYkeqbeVq2H7CYh8VInLEsorQq9m9799w5WfBv0s0WoPy2rEoFk9QzsZAAAAAecqUuiL9tfuW0ZJOiHAVXqUwRMAFmvW1E6k8ulNPdrHd8hXvawNvUFFdHebwf+unw2tpdc/UoBt3T8ZYXxmB3A==</EncryptedPassword>
+    <_PublishTargetUrl>ftp://192.185.7.6/advanced-duct-cleaning-llc-API.dylanbenedict.dev</_PublishTargetUrl>
+    <History>True|2023-05-05T19:25:49.0659122Z;False|2023-05-05T15:25:37.4763762-04:00;True|2023-05-05T15:17:35.3647259-04:00;False|2023-05-05T15:17:12.5258877-04:00;False|2023-05-05T15:16:59.0908017-04:00;False|2023-05-05T15:16:55.3184315-04:00;False|2023-05-05T15:16:41.6615865-04:00;True|2023-05-05T15:08:42.7746552-04:00;True|2023-05-05T15:00:54.6002739-04:00;False|2023-05-05T15:00:37.5059595-04:00;True|2023-05-05T14:22:33.6358102-04:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Advanced Duct Cleaning API.deps.json">
+      <publishTime>05/05/2023 15:25:43</publishTime>
+    </File>
+    <File Include="Advanced Duct Cleaning API.dll">
+      <publishTime>05/05/2023 15:25:43</publishTime>
+    </File>
+    <File Include="Advanced Duct Cleaning API.exe">
+      <publishTime>05/05/2023 15:25:43</publishTime>
+    </File>
+    <File Include="Advanced Duct Cleaning API.pdb">
+      <publishTime>05/05/2023 15:25:43</publishTime>
+    </File>
+    <File Include="Advanced Duct Cleaning API.runtimeconfig.json">
+      <publishTime>05/05/2023 14:22:21</publishTime>
+    </File>
+    <File Include="appsettings.Development.json">
+      <publishTime>05/05/2023 11:36:49</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>05/05/2023 11:36:49</publishTime>
+    </File>
+    <File Include="BouncyCastle.Cryptography.dll">
+      <publishTime>02/18/2023 10:44:18</publishTime>
+    </File>
+    <File Include="MailKit.dll">
+      <publishTime>04/15/2023 18:43:06</publishTime>
+    </File>
+    <File Include="Microsoft.OpenApi.dll">
+      <publishTime>08/29/2020 16:14:12</publishTime>
+    </File>
+    <File Include="MimeKit.dll">
+      <publishTime>04/15/2023 18:03:16</publishTime>
+    </File>
+    <File Include="runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll">
+      <publishTime>01/24/2023 00:40:40</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.Swagger.dll">
+      <publishTime>10/16/2021 08:54:10</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerGen.dll">
+      <publishTime>10/16/2021 08:54:36</publishTime>
+    </File>
+    <File Include="Swashbuckle.AspNetCore.SwaggerUI.dll">
+      <publishTime>10/16/2021 08:54:30</publishTime>
+    </File>
+    <File Include="System.Security.Cryptography.Pkcs.dll">
+      <publishTime>01/24/2023 00:40:46</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>05/05/2023 15:25:43</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

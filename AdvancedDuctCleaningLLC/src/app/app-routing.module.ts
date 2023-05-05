@@ -14,6 +14,7 @@ import {ScamAlertComponent} from "./pages/scam-alert/scam-alert.component";
 import {
   ContactAdvancedDuctCleaningComponent
 } from "./pages/contact-advanced-duct-cleaning/contact-advanced-duct-cleaning.component";
+import {RequestQuoteComponent} from "./pages/request-quote/request-quote.component";
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent, title: 'Advanced Duct Cleaning LLC', pathMatch: 'full' },
@@ -27,6 +28,7 @@ const appRoutes: Routes = [
   { path: 'partners-in-protection', component: PartnersInProtectionComponent, title: 'Partners in Protection', pathMatch: 'full' },
   { path: 'scam-alert', component: ScamAlertComponent, title: 'Scam Alert', pathMatch: 'full' },
   { path: 'contact-advanced-duct-cleaning', component: ContactAdvancedDuctCleaningComponent, title: 'Contact Advanced Duct Cleaning', pathMatch: 'full' },
+  { path: 'request-quote', component: RequestQuoteComponent, title: 'Request Quote', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent, title: 'Page Not Found', pathMatch: 'full' }
 ];
 

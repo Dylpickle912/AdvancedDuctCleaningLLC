@@ -1,0 +1,32 @@
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\Advanced Duct Cleaning API.csproj.AssemblyReference.cache
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\Advanced Duct Cleaning API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\Advanced Duct Cleaning API.AssemblyInfoInputs.cache
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\Advanced Duct Cleaning API.AssemblyInfo.cs
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\Advanced Duct Cleaning API.csproj.CoreCompileInputs.cache
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\Advanced Duct Cleaning API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\Advanced Duct Cleaning API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\appsettings.json
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\Advanced Duct Cleaning API.exe
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\Advanced Duct Cleaning API.deps.json
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\Advanced Duct Cleaning API.runtimeconfig.json
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\Advanced Duct Cleaning API.dll
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\Advanced Duct Cleaning API.pdb
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\MailKit.dll
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\MimeKit.dll
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\scopedcss\bundle\Advanced Duct Cleaning API.styles.css
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\Advanced Duct Cleaning API.csproj.CopyComplete
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\Advanced Duct Cleaning API.dll
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\refint\Advanced Duct Cleaning API.dll
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\Advanced Duct Cleaning API.pdb
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\Advanced Duct Cleaning API.genruntimeconfig.cache
+C:\Users\Dylpi\Documents\My Web Sites\AdvancedDuctCleaningLLC\Advanced Duct Cleaning API\Advanced Duct Cleaning API\obj\Debug\net6.0\ref\Advanced Duct Cleaning API.dll

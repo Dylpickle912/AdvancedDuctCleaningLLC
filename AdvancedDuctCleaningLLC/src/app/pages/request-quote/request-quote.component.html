@@ -1,0 +1,115 @@
+<div class="pageContainer">
+  <div class="content">
+    <div class="container">
+      <div class="info">
+        <p><strong>Air Duct Cleaning Quote</strong></p>
+        <p>
+          We’re committed to providing you with the most thorough cleaning possible, up-front pricing, no phony bait & switch coupons, and no fraudulent mold testing.
+        </p>
+        <p>
+          Please complete the form below. We’ll contact you ASAP to provide a confirmed quote for your home or business.
+        </p>
+        <p>
+          Required Fields *
+        </p>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input type="text" matInput formControlName="firstName">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input type="text" matInput formControlName="lastName">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input type="email" matInput formControlName="email">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Property Address</mat-label>
+            <input type="text" matInput formControlName="address">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>City</mat-label>
+            <input type="text" matInput formControlName="city">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Zip</mat-label>
+            <input type="number" matInput formControlName="zip">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Phone Number</mat-label>
+            <input type="text" matInput formControlName="phoneNumber">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>How Did You Find Us</mat-label>
+            <input type="text" matInput formControlName="how">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Service Desired</mat-label>
+            <mat-select formControlName="serviceDesired">
+              <mat-option *ngFor="let o of serviceDesiredOptions" [value]="o">{{o}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Type of Property</mat-label>
+            <mat-select formControlName="typeOfProperty">
+              <mat-option *ngFor="let o of typeOfPropertyOptions" [value]="o">{{o}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Number of Furnaces</mat-label>
+            <mat-select formControlName="numberOfFurnaces">
+              <mat-option *ngFor="let o of numberOfFurnacesOptions" [value]="o">{{o}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Style of Home</mat-label>
+            <mat-select formControlName="styleOfHome">
+              <mat-option *ngFor="let o of styleOfHomeOptions" [value]="o">{{o}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Foundation</mat-label>
+            <mat-select formControlName="foundation">
+              <mat-option *ngFor="let o of foundationOptions" [value]="o">{{o}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="finalContainer">
+            <div class="calc">
+              <p>{{firstNumber}} + {{secondNumber}} = </p>
+              <mat-form-field style="width: 75px">
+                <input type="number" matInput formControlName="calculation">
+              </mat-form-field>
+            </div>
+            <button type="submit" [ngClass]="{ 'success': showSuccess, 'failure': showFailure }" [disabled]="isSubmitting">
+              <ng-container *ngIf="!showSuccess && !showFailure">
+                Click to Submit
+                <ng-container *ngIf="!isSubmitting; else spinner">
+                  <i class="fa-solid fa-angle-right"></i>
+                </ng-container>
+              </ng-container>
+
+              <ng-container *ngIf="showSuccess && !showFailure">
+                Success
+                <i class="fa-solid fa-check"></i>
+              </ng-container>
+
+              <ng-container *ngIf="!showSuccess && showFailure">
+                Failure
+                <i class="fa-solid fa-circle-exclamation"></i>
+              </ng-container>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="image" style="background-image: url('assets/Images/megan-2.png')"></div>
+    </div>
+  </div>
+</div>
+
+<ng-template #spinner>
+  <app-spinner
+    size="Small">
+  </app-spinner>
+</ng-template>
