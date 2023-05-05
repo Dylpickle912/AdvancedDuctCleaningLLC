@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MimeKit;
+using System.Drawing;
 
 namespace Advanced_Duct_Cleaning_API.Controllers
 {
@@ -19,7 +20,7 @@ namespace Advanced_Duct_Cleaning_API.Controllers
 					MailboxAddress from = new MailboxAddress($"{form.FirstName} {form.LastName}", $"{form.Email}");
 					emailMessage.From.Add(from);
 
-					MailboxAddress to = new MailboxAddress("Advanced Duct Cleaning LLC", "advancedductcleaning1@gmail.com");
+					MailboxAddress to = new MailboxAddress("Advanced Duct Cleaning LLC", "dylanbenedict912@gmail.com");
 					emailMessage.To.Add(to);
 
 					emailMessage.Subject = "Quote Request";
@@ -31,25 +32,23 @@ namespace Advanced_Duct_Cleaning_API.Controllers
                                    <head>
                                        <style>
                                          .requestContainer {{
-                                           display: grid;
+                                           display: inline-block;
                                            width: 100%;
                                            max-width: 100%;
-                                           grid-template-columns: repeat(2, minmax(0, max-content));
-                                           gap: 15px 25px;
                                          }}
 
                                          .requestContainer .field {{
-                                           display: flex;
-                                           flex-direction: column;
-                                           width: 100%;
+                                           display: inline-block;
+                                           width: 50%;
                                            word-break: break-all;
-                                           row-gap: 3px;
-                                         }}
+                                           margin-bottom: 15px;
+                                         }} 
 
                                          .requestContainer .field .label {{
                                            font-size: 12px;
                                            color: #1b70ba;
                                            text-transform: uppercase;
+                                           margin-bottom: 3px;
                                          }}
 
                                          .requestContainer .field .value {{

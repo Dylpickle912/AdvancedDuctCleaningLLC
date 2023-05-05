@@ -78,6 +78,14 @@ p {
             i {
               display: block;
               opacity: 1;
+              color: forestgreen;
+            }
+
+            &:hover {
+              i {
+                animation-name: unset;
+                -webkit-animation-name: unset;
+              }
             }
           }
 
@@ -88,6 +96,14 @@ p {
             i {
               display: block;
               opacity: 1;
+              color: crimson;
+            }
+
+            &:hover {
+              i {
+                animation-name: unset;
+                -webkit-animation-name: unset;
+              }
             }
           }
 
