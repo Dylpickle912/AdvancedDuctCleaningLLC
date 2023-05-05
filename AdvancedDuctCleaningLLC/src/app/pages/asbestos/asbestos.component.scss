@@ -1,0 +1,61 @@
+@import '../../../variables';
+
+.content {
+  padding: 25px !important;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 280px);
+  gap: 25px;
+
+  @media only screen and (max-width: 830px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 15px;
+
+    p,
+    ol,
+    li {
+      font: {
+        size: 14px;
+        weight: 500;
+      }
+      color: $grey;
+      line-height: 1.7em;
+    }
+
+    ol {
+      padding-left: 15px;
+    }
+
+    a {
+      @include alignRight;
+      img {
+        width: 315px;
+
+        @media only screen and (max-width: 830px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 15px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -29,6 +29,7 @@ import {MatSelectModule} from "@angular/material/select";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {HttpClientModule} from "@angular/common/http";
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { AsbestosComponent } from './pages/asbestos/asbestos.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     ScamAlertComponent,
     ContactAdvancedDuctCleaningComponent,
     RequestQuoteComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    AsbestosComponent
   ],
   imports: [
     BrowserModule,
