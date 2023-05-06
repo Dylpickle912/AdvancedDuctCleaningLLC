@@ -75,6 +75,10 @@
     row-gap: 15px;
     justify-content: center;
 
+    @media only screen and (max-width: 920px) {
+      width: 96%;
+    }
+
     p {
       text-align: center;
       color: white;
@@ -116,6 +120,10 @@
     justify-items: center;
     text-align: center;
 
+    @media only screen and (max-width: 920px) {
+      width: 96%;
+    }
+
     .title {
       font: {
         family: Anton;
@@ -149,6 +157,10 @@
     justify-content: center;
     justify-items: center;
     text-align: center;
+
+    @media only screen and (max-width: 920px) {
+      width: 96%;
+    }
 
     .title {
       font: {
@@ -211,3 +223,4 @@ button {
   width: max-content;
   @include alignCenter;
 }
+
