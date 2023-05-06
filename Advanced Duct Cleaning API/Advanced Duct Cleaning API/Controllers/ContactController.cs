@@ -20,7 +20,7 @@ namespace Advanced_Duct_Cleaning_API.Controllers
 					MailboxAddress from = new MailboxAddress($"{form.FirstName} {form.LastName}", $"{form.Email}");
 					emailMessage.From.Add(from);
 
-					MailboxAddress to = new MailboxAddress("Advanced Duct Cleaning LLC", "dylanbenedict912@gmail.com");
+					MailboxAddress to = new MailboxAddress("Advanced Duct Cleaning LLC", "advancedductcleaning1@gmail.com");
 					emailMessage.To.Add(to);
 
 					emailMessage.Subject = "Quote Request";
