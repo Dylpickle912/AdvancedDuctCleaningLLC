@@ -9,7 +9,7 @@ import 'slick-carousel';
 })
 export class StepsComponent implements OnInit {
   public ngOnInit() {
-    $('.slider').slick({
+    $('.sliderSteps').slick({
       autoplay: false,
       arrows: true,
       dots: false,
