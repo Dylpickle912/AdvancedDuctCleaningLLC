@@ -48,6 +48,11 @@ export class NavigationComponent implements OnInit {
     }
   }
 
+  public closeMenu(): void {
+    this.showMenu = false;
+    this.showOurCompanyMenu = false;
+  }
+
   public toggleShowOurCompanyMenu(): void {
     this.showOurCompanyMenu = !this.showOurCompanyMenu;
   }
