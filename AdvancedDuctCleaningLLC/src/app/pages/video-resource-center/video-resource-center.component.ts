@@ -9,7 +9,7 @@ import 'slick-carousel'
 })
 export class VideoResourceCenterComponent implements OnInit {
   public ngOnInit() {
-    $('.slider').slick({
+    $('.sliderV').slick({
       autoplay: false,
       arrows: true,
       dots: false,

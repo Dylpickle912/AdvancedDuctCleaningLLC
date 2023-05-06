@@ -9,7 +9,7 @@ import 'slick-carousel';
 })
 export class BeforeAndAfterComponent implements OnInit {
   public ngOnInit() {
-    $('.slider').slick({
+    $('.sliderB').slick({
       autoplay: true,
       arrows: true,
       dots: true,
