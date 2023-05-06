@@ -37,27 +37,27 @@
     <div class="link" (click)="toggleShowOurCompanyMenu()">
       <p class="linkLabel">Our Company</p>
       <i class="caret fa-xs fa-solid fa-angle-down"></i>
-      <div class="dropdownMenu" [ngClass]="{ 'dropdownMenuActive': showOurCompanyMenu }" (click)="$event.stopPropagation()">
-        <div class="item">Our Company</div>
-        <div class="item">Steps to a Professional Air Duct Cleaning</div>
-        <div class="item">Fresh Air Corp Before and After Air Duct Cleaning</div>
+      <div class="dropdownMenu noHover" [ngClass]="{ 'dropdownMenuActive': showOurCompanyMenu }" (click)="$event.stopPropagation()">
+        <a class="item" [routerLink]="[ '/our-company' ]">Our Company</a>
+        <a class="item" [routerLink]="[ '/steps' ]">Steps to a Professional Air Duct Cleaning</a>
+        <a class="item" [routerLink]="[ '/before-and-after' ]">Fresh Air Corp Before and After Air Duct Cleaning</a>
         <div class="item close" (click)="showOurCompanyMenu = false">
           <i class="fa-solid fa-xmark"></i>
           <p>Close</p>
         </div>
       </div>
     </div>
-    <div class="link">
+    <a class="link" [routerLink]="[ '/why-clean-air-ducts' ]">
       <p class="linkLabel">Why Clean Air Ducts</p>
-    </div>
-    <div class="link">
+    </a>
+    <a class="link" [routerLink]="[ '/protecting-your-family' ]">
       <p class="linkLabel">Video Resource Center</p>
-    </div>
-    <div class="link">
+    </a>
+    <a class="link" [routerLink]="[ '/partners-in-protection' ]">
       <p class="linkLabel">PIP Network</p>
-    </div>
-    <div class="link">
+    </a>
+    <a class="link" [routerLink]="[ '/contact-advanced-duct-cleaning' ]">
       <p class="linkLabel">Contact Us</p>
-    </div>
+    </a>
   </div>
 </div>

@@ -52,6 +52,11 @@
     .dropdownMenu {
       visibility: visible;
       opacity: 1;
+
+      &.noHover {
+        visibility: hidden;
+        opacity: 1;
+      }
     }
   }
 
