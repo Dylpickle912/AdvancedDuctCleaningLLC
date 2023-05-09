@@ -8,7 +8,7 @@
     <div class="dropdownMenu">
       <a class="item" [routerLink]="[ '/our-company' ]" routerLinkActive="activeDropdownLink" [routerLinkActiveOptions]="{ exact: true }">Our Company</a>
       <a class="item" [routerLink]="[ '/steps' ]" routerLinkActive="activeDropdownLink" [routerLinkActiveOptions]="{ exact: true }">Steps to a Professional Air Duct Cleaning</a>
-      <a class="item" [routerLink]="[ '/before-and-after' ]" routerLinkActive="activeDropdownLink" [routerLinkActiveOptions]="{ exact: true }">Advanced Duct Cleaning LLC Before and After Air Duct Cleaning</a>
+      <a class="item" [routerLink]="[ '/before-and-after' ]" routerLinkActive="activeDropdownLink" [routerLinkActiveOptions]="{ exact: true }">Before and After Air Duct Cleaning</a>
     </div>
   </div>
   <a class="link" [routerLink]="[ '/why-clean-air-ducts' ]" routerLinkActive="activeLink" [routerLinkActiveOptions]="{ exact: true }">
@@ -40,7 +40,7 @@
       <div class="dropdownMenu noHover" [ngClass]="{ 'dropdownMenuActive': showOurCompanyMenu }" (click)="$event.stopPropagation()">
         <a class="item" [routerLink]="[ '/our-company' ]" (click)="closeMenu()">Our Company</a>
         <a class="item" [routerLink]="[ '/steps' ]" (click)="closeMenu()">Steps to a Professional Air Duct Cleaning</a>
-        <a class="item" [routerLink]="[ '/before-and-after' ]" (click)="closeMenu()">Advanced Duct Cleaning LLC Before and After Air Duct Cleaning</a>
+        <a class="item" [routerLink]="[ '/before-and-after' ]" (click)="closeMenu()">Before and After Air Duct Cleaning</a>
         <div class="item close" (click)="showOurCompanyMenu = false">
           <i class="fa-solid fa-xmark"></i>
           <p>Close</p>
