@@ -6,7 +6,7 @@ import {Component, HostListener, OnInit} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'Advanced Duct Cleaning LLC';
+  title = 'Advanced Duct Cleaning LLC LLC';
   public isMobile = false;
 
   public ngOnInit() {

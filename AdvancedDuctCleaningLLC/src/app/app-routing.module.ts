@@ -18,7 +18,7 @@ import {RequestQuoteComponent} from "./pages/request-quote/request-quote.compone
 import {AsbestosComponent} from "./pages/asbestos/asbestos.component";
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent, title: 'Advanced Duct Cleaning LLC', pathMatch: 'full' },
+  { path: '', component: HomeComponent, title: 'Advanced Duct Cleaning LLC LLC', pathMatch: 'full' },
   { path: 'our-company', component: OurCompanyComponent, title: 'Our Company', pathMatch: 'full' },
   { path: 'steps', component: StepsComponent, title: 'Steps to a Professional Air Duct Cleaning', pathMatch: 'full' },
   { path: 'before-and-after', component: BeforeAndAfterComponent, title: 'Before and After', pathMatch: 'full' },
@@ -28,7 +28,7 @@ const appRoutes: Routes = [
   { path: 'indoor-air-and-your-health', component: IndoorAirAndYourHealthComponent, title: 'Indoor Air and Your Health', pathMatch: 'full' },
   { path: 'partners-in-protection', component: PartnersInProtectionComponent, title: 'Partners in Protection', pathMatch: 'full' },
   { path: 'scam-alert', component: ScamAlertComponent, title: 'Scam Alert', pathMatch: 'full' },
-  { path: 'contact-advanced-duct-cleaning', component: ContactAdvancedDuctCleaningComponent, title: 'Contact Advanced Duct Cleaning', pathMatch: 'full' },
+  { path: 'contact-advanced-duct-cleaning', component: ContactAdvancedDuctCleaningComponent, title: 'Contact Advanced Duct Cleaning LLC', pathMatch: 'full' },
   { path: 'request-quote', component: RequestQuoteComponent, title: 'Request Quote', pathMatch: 'full' },
   { path: 'asbestos', component: AsbestosComponent, title: 'Asbestos', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent, title: 'Page Not Found', pathMatch: 'full' }
