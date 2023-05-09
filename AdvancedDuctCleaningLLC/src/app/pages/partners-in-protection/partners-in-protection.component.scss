@@ -29,12 +29,18 @@
       .mat-expansion-panel {
         border-radius: 0 !important;
         background-color: $white;
+        box-shadow: inset 0px 0px 24px -6px rgba(12,113,195,0.3) !important;
+        border: 1px solid #d9d9d9;
+        padding: 20px !important;
 
         .mat-expansion-panel-header {
-          box-shadow: inset 0px 0px 24px -6px rgba(12,113,195,0.3) !important;
-          border: 1px solid #d9d9d9;
-          padding: 20px !important;
           border-radius: 0 !important;
+          padding: 0 !important;
+          height: max-content !important;
+
+          &:hover {
+            background-color: transparent;
+          }
 
           .header {
             display: flex;
@@ -48,7 +54,7 @@
                 weight: 700;
                 size: 16px;
               }
-              line-height: 1em;
+              line-height: 18px;
             }
 
             .circle {
