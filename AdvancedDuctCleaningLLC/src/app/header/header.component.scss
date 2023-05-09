@@ -80,6 +80,18 @@
   }
 }
 
+.logoM {
+  display: grid;
+  width: 100%;
+  place-items: center;
+  background-color: white;
+  padding: 8px;
+
+  img {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: $secondBreak) {
   .container {
     display: flex;

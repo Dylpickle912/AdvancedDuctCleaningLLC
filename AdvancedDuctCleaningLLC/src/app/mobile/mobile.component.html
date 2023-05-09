@@ -1,0 +1,224 @@
+<div class="container">
+  <img class="mainImage" src="assets/Images/NewMobile2-1280x1477.png">
+  <div class="mainContainer">
+    <app-main-video></app-main-video>
+    <app-testimonial
+      image="download-23.webp"
+      comment="“They did an excellent job. They made sure they cleaned all the vents and took their time; they did a nice job cleaning up after they were done.”"
+      name="David"
+      where="Richmond"></app-testimonial>
+    <div class="expansionList">
+      <mat-expansion-panel [hideToggle]="true" (opened)="isOpen1 = true" (closed)="isOpen1 = false">
+        <mat-expansion-panel-header>
+          <div class="header">
+            <h5>Why Clean Air Ducts?</h5>
+            <div class="circle">
+              <ng-container *ngIf="!isOpen1">+</ng-container>
+              <ng-container *ngIf="isOpen1">-</ng-container>
+            </div>
+          </div>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <div class="content">
+            <p>
+              Parents are concerned about the health of their kids. A week doesn’t seem to pass without a TV special or talk show presenting medical facts about the dangers of pollutants in the indoor air we breathe.
+            </p>
+            <p>
+              This brief overview is offered to help you determine if a <strong>professional air duct cleaning</strong> would be beneficial for your home and family.
+            </p>
+            <p>
+              Carefully consider the following questions and then decide for yourself.
+            </p>
+            <img src="assets/Images/Why-Clean-Air-Ducts/1.jpg">
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+      <mat-expansion-panel [hideToggle]="true" (opened)="isOpen2 = true" (closed)="isOpen2 = false">
+        <mat-expansion-panel-header>
+          <div class="header">
+            <h5>What's In Your Air?</h5>
+            <div class="circle">
+              <ng-container *ngIf="!isOpen2">+</ng-container>
+              <ng-container *ngIf="isOpen2">-</ng-container>
+            </div>
+          </div>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <div class="content">
+            <p>
+              Air contamination is the normal by-product of living things occupying closed spaces.
+            </p>
+            <p>
+              Skin cells, mold, dust, dirt, mildew, pet dander, aerosol sprays, glue, paint, cooking oils, spices and insecticides are just a few of the contaminants that float in the air inside our homes.
+            </p>
+            <p>
+              But there’s another problem – it doesn’t stay in the air. These particles settle and collect creating an unhealthy mess.
+            </p>
+            <img src="assets/Images/Whats_In_Your_Air2_2-600x400.jpg">
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+      <mat-expansion-panel [hideToggle]="true" (opened)="isOpen3 = true" (closed)="isOpen3 = false">
+        <mat-expansion-panel-header>
+          <div class="header">
+            <h5>What's Hiding In The Ducts?</h5>
+            <div class="circle">
+              <ng-container *ngIf="!isOpen3">+</ng-container>
+              <ng-container *ngIf="isOpen3">-</ng-container>
+            </div>
+          </div>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <div class="content">
+            <p>
+              Over a two to three year span, air ducts become lined with particles of contaminants as they settle inside the system. Organic material (hair and skin cells) can also support growth of mold and mildew.
+            </p>
+            <p>
+              This picture shows a build-up that is not unusual for a system left uncleaned for three or more years.
+            </p>
+            <p>
+              This blanket of dirt doesn’t just lie there, it finds a way back into your lungs.
+            </p>
+            <img src="assets/Images/why3.jpg">
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+      <mat-expansion-panel [hideToggle]="true" (opened)="isOpen4 = true" (closed)="isOpen4 = false">
+        <mat-expansion-panel-header>
+          <div class="header">
+            <h5>Can It Affect Your Health?</h5>
+            <div class="circle">
+              <ng-container *ngIf="!isOpen4">+</ng-container>
+              <ng-container *ngIf="isOpen4">-</ng-container>
+            </div>
+          </div>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <div class="content">
+            <p>
+              Each time the blower fan comes on, a cloud of particle-laden dust blows back into the living spaces of your home.
+            </p>
+            <p>
+              Many studies have found that the air we’re breathing inside our homes is more contaminated than the air outdoors. More and more evidence links childhood asthma with indoor air pollution.
+            </p>
+            <p>
+              But, that’s not the only problem. The blanket of dirt also affects the operation of the furnace system.
+            </p>
+            <img src="assets/Images/why4.jpg">
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+      <mat-expansion-panel [hideToggle]="true" (opened)="isOpen5 = true" (closed)="isOpen5 = false">
+        <mat-expansion-panel-header>
+          <div class="header">
+            <h5>Can It Damage The Furnace?</h5>
+            <div class="circle">
+              <ng-container *ngIf="!isOpen5">+</ng-container>
+              <ng-container *ngIf="isOpen5">-</ng-container>
+            </div>
+          </div>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <div class="content">
+            <p>
+              A furnace system is a sizable investment. The blower-fan, heat exchanger and A-coils need to be cleaned regularly.
+            </p>
+            <p>
+              Overheating, short cycling, A-coil freeze-ups and wasted fuel are the results of this contamination.
+            </p>
+            <p>
+              With these issues considered, the safest and most economical choice is to keep the system clean.
+            </p>
+            <img src="assets/Images/Why5.jpg">
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+      <mat-expansion-panel [hideToggle]="true" (opened)="isOpen6 = true" (closed)="isOpen6 = false">
+        <mat-expansion-panel-header>
+          <div class="header">
+            <h5>What's The Best Solution?</h5>
+            <div class="circle">
+              <ng-container *ngIf="!isOpen6">+</ng-container>
+              <ng-container *ngIf="isOpen6">-</ng-container>
+            </div>
+          </div>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <div class="content">
+            <p>
+              <strong>Get The Air Duct System Cleaned!</strong>
+            </p>
+            <p>
+              Many HVAC companies recommend a three year cleaning cycle to prohibit the build-up of contamination.
+            </p>
+            <p>
+              This regular maintenance, not unlike oil and filter changes in our cars, keeps the furnace running efficiently and the air fresh and clean.
+            </p>
+            <img src="assets/Images/Why6.jpg">
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+      <mat-expansion-panel [hideToggle]="true" (opened)="isOpen7 = true" (closed)="isOpen7 = false">
+        <mat-expansion-panel-header>
+          <div class="header">
+            <h5>Deceptive Advertising At It's Worst.</h5>
+            <div class="circle">
+              <ng-container *ngIf="!isOpen7">+</ng-container>
+              <ng-container *ngIf="isOpen7">-</ng-container>
+            </div>
+          </div>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <div class="content">
+            <p>
+              <strong>Make no mistake!</strong> Bait & switch is not just an aggressive marketing technique, it is a purposeful deception.
+            </p>
+            <p>
+              These “low priced” coupons are a part of a pre-designed formula that are designed to defraud and mislead.
+            </p>
+            <img src="assets/Images/why7.jpg">
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+      <mat-expansion-panel [hideToggle]="true" (opened)="isOpen8 = true" (closed)="isOpen8 = false">
+        <mat-expansion-panel-header>
+          <div class="header">
+            <h5>What You Should Expect.</h5>
+            <div class="circle">
+              <ng-container *ngIf="!isOpen8">+</ng-container>
+              <ng-container *ngIf="isOpen8">-</ng-container>
+            </div>
+          </div>
+        </mat-expansion-panel-header>
+        <ng-template matExpansionPanelContent>
+          <div class="content">
+            <p>
+              Knowledge is power. If you know what questions to ask, you’re more likely to hire a contractor who offers quality service.
+            </p>
+            <p>
+              What you should expect is honesty, no deceptive small print, phony promotions or hidden charges.
+            </p>
+            <p>
+              If you have further questions, or are ready to schedule your cleaning, contact Fresh Air Corp today – Barry McCoy, Owner Fresh Air Corp.
+            </p>
+            <img src="assets/Images/why8.jpg">
+          </div>
+        </ng-template>
+      </mat-expansion-panel>
+    </div>
+    <app-testimonial
+      image="41438-b580.jpg"
+      comment="“The air duct cleaning service was excellent! Scott was great. I asked questions and he gave a direct answer. They were very courteous and kind; I would definitely hire them again.”"
+      name="Karla"
+      where="Centerville"></app-testimonial>
+    <div class="seeReviews">
+      <p>
+        Take a moment to read and look over all of our online air duct cleaning reviews. Click the review bubble and see all of our duct cleaning reviews at Google, Yelp, Facebook and more sent in by our wonderful customers.
+        <a [routerLink]="[ '/request-quote' ]">Click here to get a free air duct cleaning quote</a>
+      </p>
+      <a class="reviewA">
+        <img src="assets/Images/CusotmerReviews150.png" alt="See Reviews">
+      </a>
+    </div>
+  </div>
+</div>

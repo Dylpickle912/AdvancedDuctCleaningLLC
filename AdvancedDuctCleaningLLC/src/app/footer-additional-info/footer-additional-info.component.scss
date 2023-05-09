@@ -24,3 +24,16 @@
     }
   }
 }
+
+.mobileContainer {
+  display: block;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  background-color: #abce61;
+  color: white;
+  font: {
+    size: 25px;
+    weight: bold;
+  }
+}

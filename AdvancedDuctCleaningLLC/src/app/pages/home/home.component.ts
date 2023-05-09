@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import * as $ from 'jquery';
 import 'slick-carousel';
 import {Router} from "@angular/router";
@@ -10,9 +10,12 @@ import {Router} from "@angular/router";
 })
 export class HomeComponent implements OnInit {
 
+  public isMobile!: boolean;
+
   constructor(private readonly router: Router) { }
 
   public ngOnInit() {
+    this.checkIfIsMobile(window.innerWidth);
     $('.slider').slick({
       autoplay: true,
       arrows: true,
@@ -30,5 +33,14 @@ export class HomeComponent implements OnInit {
 
   public navigateToRequestQuote(): void {
     this.router.navigate(['/request-quote']);
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkIfIsMobile(event.target.innerWidth);
+  }
+
+  public checkIfIsMobile(size: number): void {
+    this.isMobile = size < 500;
   }
 }

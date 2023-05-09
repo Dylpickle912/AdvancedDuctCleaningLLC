@@ -31,6 +31,9 @@ import {HttpClientModule} from "@angular/common/http";
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { AsbestosComponent } from './pages/asbestos/asbestos.component';
 import {HashLocationStrategy, LocationStrategy} from "@angular/common";
+import { MobileComponent } from './mobile/mobile.component';
+import { MainVideoComponent } from './mobile/main-video/main-video.component';
+import { TestimonialComponent } from './mobile/testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +57,10 @@ import {HashLocationStrategy, LocationStrategy} from "@angular/common";
     ContactAdvancedDuctCleaningComponent,
     RequestQuoteComponent,
     SpinnerComponent,
-    AsbestosComponent
+    AsbestosComponent,
+    MobileComponent,
+    MainVideoComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule,

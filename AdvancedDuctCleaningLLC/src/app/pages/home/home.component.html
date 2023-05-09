@@ -1,41 +1,47 @@
-<div class="container">
-  <div class="carouselContainer">
-    <div class="slider">
-      <div class="slide slide1" style="background-image: url('assets/Images/Slide1A2c.jpg')">
-        <div class="info">
-          <p>There is a difference!</p>
-          <div class="iframeContainer">
-            <iframe src="https://www.youtube.com/embed/AlPVt9TeoKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<ng-container *ngIf="!isMobile; else mobile">
+  <div class="container">
+    <div class="carouselContainer">
+      <div class="slider">
+        <div class="slide slide1" style="background-image: url('assets/Images/Slide1A2c.jpg')">
+          <div class="info">
+            <p>There is a difference!</p>
+            <div class="iframeContainer">
+              <iframe src="https://www.youtube.com/embed/AlPVt9TeoKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="slide slide2" style="background-image: url('assets/Images/Slide2c.jpg')">
+          <div class="info">
+            <p class="title">Over 50</p>
+            <p class="subtitle">Central Ohio Heating and Cooling companies recommend Us!</p>
+            <button (click)="navigateToRequestQuote()">Request a Quote</button>
+          </div>
+        </div>
+        <div class="slide slide3" style="background-image: url('assets/Images/Slide3.jpg')">
+          <div class="info">
+            <p class="title">For 10 Years Running</p>
+            <p class="subtitle">Fresh Air Corp is voted Best in Columbus!</p>
+            <button (click)="navigateToRequestQuote()">Request a Quote</button>
+          </div>
+        </div>
+        <div class="slide slide4" style="background-image: url('assets/Images/Slide5b.jpg')">
+          <div class="info">
+            <p class="title">See Our Reviews Online!</p>
+            <button (click)="navigateToRequestQuote()">Request a Quote</button>
           </div>
         </div>
       </div>
-      <div class="slide slide2" style="background-image: url('assets/Images/Slide2c.jpg')">
-        <div class="info">
-          <p class="title">Over 50</p>
-          <p class="subtitle">Central Ohio Heating and Cooling companies recommend Us!</p>
-          <button (click)="navigateToRequestQuote()">Request a Quote</button>
-        </div>
+      <div class="arrow prevButton">
+        <i class="fa-solid fa-angle-left"></i>
       </div>
-      <div class="slide slide3" style="background-image: url('assets/Images/Slide3.jpg')">
-        <div class="info">
-          <p class="title">For 10 Years Running</p>
-          <p class="subtitle">Fresh Air Corp is voted Best in Columbus!</p>
-          <button (click)="navigateToRequestQuote()">Request a Quote</button>
-        </div>
-      </div>
-      <div class="slide slide4" style="background-image: url('assets/Images/Slide5b.jpg')">
-        <div class="info">
-          <p class="title">See Our Reviews Online!</p>
-          <button (click)="navigateToRequestQuote()">Request a Quote</button>
-        </div>
+      <div class="arrow nextButton">
+        <i class="fa-solid fa-angle-right"></i>
       </div>
     </div>
-    <div class="arrow prevButton">
-      <i class="fa-solid fa-angle-left"></i>
-    </div>
-    <div class="arrow nextButton">
-      <i class="fa-solid fa-angle-right"></i>
-    </div>
+    <app-video-resources-carousel></app-video-resources-carousel>
   </div>
-  <app-video-resources-carousel></app-video-resources-carousel>
-</div>
+</ng-container>
+
+<ng-template #mobile>
+  <app-mobile></app-mobile>
+</ng-template>

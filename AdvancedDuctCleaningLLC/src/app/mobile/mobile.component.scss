@@ -1,0 +1,135 @@
+@import '../../variables.scss';
+
+html,
+body {
+  background-size: cover !important;
+  background-attachment: unset !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .mainImage {
+    width: 100%;
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    @include alignCenter;
+    row-gap: 30px;
+
+    .expansionList {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      row-gap: 10px;
+    }
+
+    .seeReviews {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 25px;
+      row-gap: 30px;
+      background-color: white;
+
+      p {
+        color: #666;
+        font: {
+          size: 14px;
+        }
+        line-height: 1.7em;
+      }
+
+      .reviewA {
+        display: block;
+        width: 75%;
+        @include alignCenter;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.mat-expansion-panel {
+  background-color: white !important;
+  padding: 20px !important;
+
+  &.mat-expanded {
+    .mat-expansion-panel-header {
+      .header {
+        h5 {
+          color: $nearBlack;
+        }
+      }
+    }
+  }
+}
+
+.mat-expansion-panel-header {
+  padding: 0 !important;
+  height: max-content !important;
+
+  .header {
+    display: flex;
+    width: 100%;
+    column-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    h5 {
+      color: $grey;
+      font: {
+        size: 16px;
+        weight: bold;
+      }
+    }
+
+    .circle {
+      display: grid;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      background-color: $lGrey;
+      place-items: center;
+      color: white;
+      border-radius: 50%;
+    }
+  }
+}
+
+::ng-deep {
+  .mat-expansion-panel-body {
+    padding: 0 !important;
+  }
+}
+
+::ng-deep .mat-expansion-panel-content {
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px;
+    margin-top: 15px;
+
+    p {
+      color: #666;
+      font: {
+        size: 14px;
+      }
+      line-height: 1.7em;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

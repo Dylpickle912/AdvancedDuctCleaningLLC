@@ -1,6 +1,6 @@
 <div class="container">
-  <app-header></app-header>
-  <app-navigation></app-navigation>
+  <app-header [isMobile]="isMobile"></app-header>
+  <app-navigation *ngIf="!isMobile"></app-navigation>
   <router-outlet></router-outlet>
-  <app-footer-additional-info></app-footer-additional-info>
+  <app-footer-additional-info [isMobile]="isMobile"></app-footer-additional-info>
 </div>

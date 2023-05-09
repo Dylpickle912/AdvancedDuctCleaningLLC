@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="!isMobile; else mobile">
   <a [routerLink]="[ '/steps' ]">
     <img src="assets/Images/10-Step.png">
   </a>
@@ -9,3 +9,9 @@
     <img src="assets/Images/beforeafter.png">
   </a>
 </div>
+
+<ng-template #mobile>
+  <div class="mobileContainer">
+    Call <a href="tele:7659149153">(765) 914-9153</a> for an Air Duct Cleaning Quote.
+  </div>
+</ng-template>

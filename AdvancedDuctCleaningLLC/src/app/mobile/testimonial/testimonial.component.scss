@@ -1,0 +1,61 @@
+@import '../../../variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+  position: relative;
+  line-height: 1.5em;
+  text-align: center;
+
+  .circle {
+    height: 32px;
+    width: 32px;
+    background-color: #f5f5f5;
+    border: 2px solid #666;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    i {
+      font-size: 22px;
+      line-height: 22px;
+      color: #666;
+    }
+  }
+
+  .circleImage {
+    margin-bottom: 20px;
+    @include alignCenter;
+    width: 90px;
+    height: 90px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+
+  .comment {
+    padding-bottom: 1em;
+    color: #666;
+    font: {
+      size: 14px;
+      weight: 500;
+    }
+  }
+
+  .from {
+    margin-top: 32px;
+    color: #666;
+    font: {
+      size: 14px;
+      weight: bold;
+    }
+  }
+}

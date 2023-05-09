@@ -1,20 +1,28 @@
-<div class="container">
-  <a class="logo" [routerLink]="[ '' ]">
+<ng-container *ngIf="!isMobile; else mobile">
+  <div class="container">
+    <a class="logo" [routerLink]="[ '' ]">
+      <img src="assets/logo-transparent-background.png" alt="Logo">
+    </a>
+    <a class="square scam" [routerLink]="[ 'scam-alert' ]">
+      <img src="assets/Images/SacmAlert4.png" alt="Scam Alert">
+    </a>
+    <div class="buttons">
+      <a class="button blue" href="tele:7659149153">
+        <i class="fa-solid fa-phone fa-sm"></i>
+        <p>Call Us 765.914.9153</p>
+      </a>
+      <a class="button red" [routerLink]="[ '/request-quote' ]">
+        <div class="circle">
+          <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+        <p>Get a Free Quote</p>
+      </a>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #mobile>
+  <a class="logoM" [routerLink]="[ '/' ]">
     <img src="assets/logo-transparent-background.png" alt="Logo">
   </a>
-  <a class="square scam" [routerLink]="[ 'scam-alert' ]">
-    <img src="assets/Images/SacmAlert4.png" alt="Scam Alert">
-  </a>
-  <div class="buttons">
-    <div class="button blue">
-      <i class="fa-solid fa-phone fa-sm"></i>
-      <p>Call Us 614.322.3828</p>
-    </div>
-    <a class="button red" [routerLink]="[ '/request-quote' ]">
-      <div class="circle">
-        <i class="fa-solid fa-dollar-sign"></i>
-      </div>
-      <p>Get a Free Quote</p>
-    </a>
-  </div>
-</div>
+</ng-template>
