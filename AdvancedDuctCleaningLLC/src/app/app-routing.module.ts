@@ -18,7 +18,7 @@ import {RequestQuoteComponent} from "./pages/request-quote/request-quote.compone
 import {AsbestosComponent} from "./pages/asbestos/asbestos.component";
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent, title: 'Advanced Duct Cleaning LLC LLC', pathMatch: 'full' },
+  { path: '', component: HomeComponent, title: 'Advanced Duct Cleaning LLC', pathMatch: 'full' },
   { path: 'our-company', component: OurCompanyComponent, title: 'Our Company', pathMatch: 'full' },
   { path: 'steps', component: StepsComponent, title: 'Steps to a Professional Air Duct Cleaning', pathMatch: 'full' },
   { path: 'before-and-after', component: BeforeAndAfterComponent, title: 'Before and After', pathMatch: 'full' },
