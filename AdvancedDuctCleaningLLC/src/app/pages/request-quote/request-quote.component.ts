@@ -15,7 +15,8 @@ export class RequestQuoteComponent implements OnInit {
 
   public serviceDesiredOptions = [
     'Air Duct Cleaning',
-    'Sanitizing'
+    'Dryer Vent Cleaning',
+    'Air Duct Sanitation'
   ];
 
   public typeOfPropertyOptions = [
