@@ -22,7 +22,6 @@ import { IndoorAirAndYourHealthComponent } from './pages/indoor-air-and-your-hea
 import { PartnersInProtectionComponent } from './pages/partners-in-protection/partners-in-protection.component';
 import {MatExpansionModule} from "@angular/material/expansion";
 import { ScamAlertComponent } from './pages/scam-alert/scam-alert.component';
-import { ContactAdvancedDuctCleaningComponent } from './pages/contact-advanced-duct-cleaning/contact-advanced-duct-cleaning.component';
 import { RequestQuoteComponent } from './pages/request-quote/request-quote.component';
 import {MatInputModule} from "@angular/material/input";
 import {MatSelectModule} from "@angular/material/select";
@@ -54,7 +53,6 @@ import { TestimonialComponent } from './mobile/testimonial/testimonial.component
     IndoorAirAndYourHealthComponent,
     PartnersInProtectionComponent,
     ScamAlertComponent,
-    ContactAdvancedDuctCleaningComponent,
     RequestQuoteComponent,
     SpinnerComponent,
     AsbestosComponent,

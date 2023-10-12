@@ -24,7 +24,7 @@
     }
   }
 
-  .slider {
+  .homeSlider {
     width: 100%;
     height: 100%;
 
@@ -68,24 +68,47 @@
 
   .info {
     display: flex;
-    flex-direction: column;
     width: 400px;
     justify-self: center;
     align-self: flex-end;
-    row-gap: 15px;
+    gap: 15px;
     justify-content: center;
 
     @media only screen and (max-width: 920px) {
       width: 96%;
     }
 
+    .button {
+      all: unset;
+      display: flex;
+      flex-direction: column;
+      width: max-content;
+      min-width: 135px;
+      border-radius: 16px;
+      @include boxShadow;
+      padding: 12px 25px;
+      background-color: $white;
+      text-align: center;
+      font: {
+        family: 'Bahnschrift';
+        size: 20px;
+      }
+      color: black;
+      cursor: pointer;
+      transition: box-shadow .2s;
+
+      &:hover {
+        box-shadow: rgba(255, 255, 255, 0.75) 0 3px 6px;
+      }
+    }
+
     p {
       text-align: center;
-      color: white;
       font: {
         size: 32px;
         weight: bold;
       }
+      color: $white;
     }
 
     .iframeContainer {

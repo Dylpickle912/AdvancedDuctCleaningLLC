@@ -16,14 +16,31 @@ background: linear-gradient(180deg,#3c85c1 0%,#06529e 100%);
 
 @mixin blueGradient() {
   background: linear-gradient(180deg, #2b87da 0%, #1873c9 100%);
+  transition: background .2s;
+
+  &:hover {
+    background: linear-gradient(180deg, darken(#2b87da, 3%) 0%, darken(#1873c9, 3%) 100%);
+  }
 }
 
 @mixin redGradient() {
   background: linear-gradient(180deg, #ea2e2e 0%, #c12d17 100%);
+  transition: background .2s;
+
+  &:hover {
+    background: linear-gradient(180deg, darken(#ea2e2e, 3%) 0%, darken(#c12d17, 3%) 100%);
+  }
 }
 
 @mixin textShadow() {
   text-shadow: 0.08em 0.08em 0.08em rgba(0, 0, 0, 0.4);
+}
+
+@mixin textStroke() {
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 @mixin boxShadow() {

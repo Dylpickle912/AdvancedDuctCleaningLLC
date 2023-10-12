@@ -1,4 +1,4 @@
-import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
+import {AfterViewInit, Component, HostListener, OnInit} from '@angular/core';
 import * as $ from 'jquery';
 import 'slick-carousel';
 import {Router} from "@angular/router";
@@ -8,7 +8,7 @@ import {Router} from "@angular/router";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
 
   public isMobile!: boolean;
 
@@ -16,7 +16,11 @@ export class HomeComponent implements OnInit {
 
   public ngOnInit() {
     this.checkIfIsMobile(window.innerWidth);
-    $('.slider').slick({
+  }
+
+  public ngAfterViewInit() {
+    /*
+    $('.homeSlider').slick({
       autoplay: true,
       arrows: true,
       dots: false,
@@ -26,9 +30,10 @@ export class HomeComponent implements OnInit {
       speed: 300,
       fade: true,
       cssEase: 'linear',
-      prevArrow: $('.prevButton'),
-      nextArrow: $('.nextButton')
+      prevArrow: $('#prevButton'),
+      nextArrow: $('#nextButton')
     });
+    */
   }
 
   public navigateToRequestQuote(): void {

@@ -1,15 +1,18 @@
 <ng-container *ngIf="!isMobile; else mobile">
   <div class="container">
     <div class="carouselContainer">
-      <div class="slider">
-        <div class="slide slide1" style="background-image: url('assets/Images/Slide1A2c.jpg')">
+      <div class="homeSlider">
+        <div class="slide slide1" style="background-image: url('assets/Images/IMG_0766-min.jpeg')">
           <div class="info">
-            <p>There is a difference!</p>
+            <button type="button" class="button" (click)="navigateToRequestQuote()">Request a Quote</button>
+            <!--
             <div class="iframeContainer">
               <iframe src="https://www.youtube.com/embed/AlPVt9TeoKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+            -->
           </div>
         </div>
+        <!--
         <div class="slide slide2" style="background-image: url('assets/Images/Slide2c.jpg')">
           <div class="info">
             <p class="title">Over 50</p>
@@ -30,13 +33,16 @@
             <button (click)="navigateToRequestQuote()">Request a Quote</button>
           </div>
         </div>
+        -->
       </div>
-      <div class="arrow prevButton">
+      <!--
+      <div class="arrow prevButton" id="prevButton">
         <i class="fa-solid fa-angle-left"></i>
       </div>
-      <div class="arrow nextButton">
+      <div class="arrow nextButton" id="nextButton">
         <i class="fa-solid fa-angle-right"></i>
       </div>
+      -->
     </div>
     <app-video-resources-carousel></app-video-resources-carousel>
   </div>

@@ -12,8 +12,6 @@ import {HttpErrorResponse} from "@angular/common/http";
 export class RequestQuoteComponent implements OnInit {
 
   public form!: FormGroup;
-  public firstNumber!: number;
-  public secondNumber!: number;
 
   public serviceDesiredOptions = [
     'Air Duct Cleaning',
@@ -57,13 +55,10 @@ export class RequestQuoteComponent implements OnInit {
               private readonly contactService: ContactService) { }
 
   public ngOnInit() {
-    this.firstNumber = Math.floor((Math.random() * 20) + 1); // Get number between 1 and 20
-    this.secondNumber = Math.floor((Math.random() * 20) + 1); // Get number between 1 and 20
-
     this.form = this.fb.group({
-      firstName: [{ value: undefined, disabled: false }, [ Validators.required ]],
-      lastName: [{ value: undefined, disabled: false }, [ Validators.required ]],
-      email: [{ value: undefined, disabled: false }, [ Validators.required, Validators.email ]],
+      firstNameasdf: [{ value: undefined, disabled: false }, [ Validators.required ]],
+      lastNameasdf: [{ value: undefined, disabled: false }, [ Validators.required ]],
+      emailasdf: [{ value: undefined, disabled: false }, [ Validators.required, Validators.email ]],
       address: [{ value: undefined, disabled: false }, [ Validators.required ]],
       city: [{ value: undefined, disabled: false }, [ Validators.required ]],
       zip: [{ value: undefined, disabled: false }, [ Validators.required ]],
@@ -74,18 +69,23 @@ export class RequestQuoteComponent implements OnInit {
       numberOfFurnaces: [{ value: undefined, disabled: false }, [ Validators.required ]],
       styleOfHome: [{ value: undefined, disabled: false }, [ Validators.required ]],
       foundation: [{ value: undefined, disabled: false }, [ Validators.required ]],
-      calculation: [{ value: undefined, disabled: false }, [ Validators.required, sumValidator(this.firstNumber, this.secondNumber) ]],
+      firstName: [{ value: undefined, disabled: false }],
+      lastName: [{ value: undefined, disabled: false }],
+      email: [{ value: undefined, disabled: false }],
     });
   }
 
   public onSubmit(): void {
     this.form.markAllAsTouched();
-    if (this.form.valid) {
+
+    const honeypot: boolean = Boolean(this.form.controls['firstName'].value) || Boolean(this.form.controls['lastName'].value) || Boolean(this.form.controls['email'].value);
+
+    if (this.form.valid && !honeypot) {
       this.isSubmitting = true;
       this.contactService.submitRequestQuote({
-        firstName: this.form.controls['firstName'].value,
-        lastName: this.form.controls['lastName'].value,
-        email: this.form.controls['email'].value,
+        firstName: this.form.controls['firstNameasdf'].value,
+        lastName: this.form.controls['lastNameasdf'].value,
+        email: this.form.controls['emailasdf'].value,
         address: this.form.controls['address'].value,
         city: this.form.controls['city'].value,
         zip: this.form.controls['zip'].value,

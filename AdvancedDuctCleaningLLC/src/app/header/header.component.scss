@@ -3,8 +3,8 @@
 .container {
   display: grid;
   width: 100%;
-  grid-template-columns: minmax(0, 50%) repeat(3, minmax(0, max-content));
-  grid-template-areas: 'logo reviews scam buttons';
+  grid-template-columns: minmax(0, 50%) minmax(0, 200px) minmax(0, max-content);
+  grid-template-areas: 'logo reviews buttons';
   justify-content: space-between;
   align-items: center;
 
@@ -18,10 +18,10 @@
 
   .reviews {
     grid-area: reviews;
-  }
 
-  .scam {
-    grid-area: scam;
+    img {
+      width: 100%;
+    }
   }
 
   .buttons {

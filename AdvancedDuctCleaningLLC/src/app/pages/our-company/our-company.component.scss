@@ -1,56 +1,30 @@
 @import '../../../variables';
 
-.our-company-container {
-  display: grid;
+.info {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-  column-gap: 30px;
-
-  @media only screen and (max-width: 950px) {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
+  padding: 15px 35px;
+  font: {
+    size: 14px;
+    weight: 700;
   }
+  line-height: 1.7em;
+  color: $grey;
 
-  .image {
+  span,
+  p,
+  ul {
     display: block;
-    width: 100%;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
+    margin-bottom: 10px;
   }
 
-  .info {
-    font: {
-      size: 14px;
-      weight: 700;
-    }
-    line-height: 1.7em;
-    color: $grey;
+  ul {
+    padding-left: 15px;
+  }
 
-    img {
-      width: 115px;
-      margin-right: 20px;
-      margin-bottom: 20px;
-      float: left;
-    }
-
-    span,
-    p,
-    ul {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    ul {
-      padding-left: 15px;
-    }
-
-    p {
-      display: inline-block;
-      width: 100%;
-    }
+  p {
+    display: inline-block;
+    width: 100%;
   }
 }
