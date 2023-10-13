@@ -79,26 +79,10 @@
     }
 
     .button {
-      all: unset;
-      display: flex;
-      flex-direction: column;
-      width: max-content;
-      min-width: 135px;
-      border-radius: 16px;
-      @include boxShadow;
-      padding: 12px 25px;
-      background-color: $white;
-      text-align: center;
-      font: {
-        family: 'Bahnschrift';
-        size: 20px;
-      }
-      color: black;
-      cursor: pointer;
-      transition: box-shadow .2s;
+      padding: 8px 15px;
 
-      &:hover {
-        box-shadow: rgba(255, 255, 255, 0.75) 0 3px 6px;
+      &.red {
+        @include redGradient;
       }
     }
 
