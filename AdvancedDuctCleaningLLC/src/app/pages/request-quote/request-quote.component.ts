@@ -1,8 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
-import {ContactService} from "../../contact.service";
+import {ContactService, DesiredService} from "../../contact.service";
 import {catchError, tap, throwError} from "rxjs";
 import {HttpErrorResponse} from "@angular/common/http";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-request-quote',
@@ -13,11 +14,10 @@ export class RequestQuoteComponent implements OnInit {
 
   public form!: FormGroup;
 
-  public serviceDesiredOptions = [
-    'Air Duct Cleaning',
-    'Dryer Vent Cleaning',
-    'Air Duct Sanitation'
-  ];
+  public serviceDesiredOptions: { name: string, value: string }[] = (Object.keys(DesiredService) as (keyof typeof DesiredService)[]).map((key) => ({
+    name: key,
+    value: DesiredService[key]
+  }));
 
   public typeOfPropertyOptions = [
     'Residential',
@@ -53,7 +53,8 @@ export class RequestQuoteComponent implements OnInit {
   public showFailure = false;
 
   constructor(private readonly fb: FormBuilder,
-              private readonly contactService: ContactService) { }
+              private readonly contactService: ContactService,
+              private readonly router: Router) { }
 
   public ngOnInit() {
     this.form = this.fb.group({
@@ -65,7 +66,7 @@ export class RequestQuoteComponent implements OnInit {
       zip: [{ value: undefined, disabled: false }, [ Validators.required ]],
       phoneNumber: [{ value: undefined, disabled: false }, [ Validators.required ]],
       how: [{ value: undefined, disabled: false }],
-      serviceDesired: [{ value: undefined, disabled: false }, [ Validators.required ]],
+      serviceDesired: [{ value: [], disabled: false }, [ Validators.required ]],
       typeOfProperty: [{ value: undefined, disabled: false }, [ Validators.required ]],
       numberOfFurnaces: [{ value: undefined, disabled: false }, [ Validators.required ]],
       styleOfHome: [{ value: undefined, disabled: false }, [ Validators.required ]],
@@ -73,6 +74,7 @@ export class RequestQuoteComponent implements OnInit {
       firstName: [{ value: undefined, disabled: false }],
       lastName: [{ value: undefined, disabled: false }],
       email: [{ value: undefined, disabled: false }],
+      squareFootage: [{ value: 0, disabled: false }, [Validators.required]]
     });
   }
 
@@ -96,14 +98,14 @@ export class RequestQuoteComponent implements OnInit {
         typeOfProperty: this.form.controls['typeOfProperty'].value,
         numberOfFurnaces: this.form.controls['numberOfFurnaces'].value,
         styleOfHome: this.form.controls['styleOfHome'].value,
-        foundation: this.form.controls['foundation'].value
+        foundation: this.form.controls['foundation'].value,
+        squareFootage: this.form.controls['squareFootage'].value
       }).pipe(
         tap(() => {
           this.isSubmitting = false;
           this.showSuccess = true;
-          setTimeout(() => {
-            this.showSuccess = false;
-          }, 2000);
+          window.scrollTo(0, 0);
+          this.form.reset();
         }),
         catchError((err: HttpErrorResponse) => {
           this.isSubmitting = false;
@@ -116,11 +118,8 @@ export class RequestQuoteComponent implements OnInit {
       ).subscribe();
     }
   }
-}
 
-function sumValidator(num1: number, num2: number) {
-  return function(control: FormControl) {
-    const sum = num1 + num2;
-    return control.value !== sum ? { 'sumMismatch': true } : null;
-  };
+  public navigateToHome(): void {
+    this.router.navigate(['']);
+  }
 }

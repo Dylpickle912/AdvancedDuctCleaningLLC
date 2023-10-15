@@ -25,9 +25,16 @@ export interface RequestQuoteDTO {
   zip: number;
   phoneNumber: string;
   how: string;
-  serviceDesired: string;
+  serviceDesired: DesiredService[];
   typeOfProperty: string;
   numberOfFurnaces: number;
   styleOfHome: string;
   foundation: string;
+  squareFootage: number;
+}
+
+export enum DesiredService {
+  AirDuctCleaning = 'Air Duct Cleaning',
+  DryerVentCleaning = 'Dryer Vent Cleaning',
+  AirDuctSanitation = 'Air Duct Sanitation'
 }

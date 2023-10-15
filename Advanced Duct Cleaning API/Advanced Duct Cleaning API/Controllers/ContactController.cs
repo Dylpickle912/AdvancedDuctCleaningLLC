@@ -12,18 +12,18 @@ namespace Advanced_Duct_Cleaning_API.Controllers
 		[HttpPost]
 		public async Task<ActionResult> SendContactForm(FormSubmissionDTO form)
 		{
-			if (ModelState.IsValid)
+			if (ModelState.IsValid && form.ServiceDesired.Count > 0)
 			{
 				try
 				{
 					var emailMessage = new MimeMessage();
-					MailboxAddress from = new MailboxAddress($"{form.FirstName} {form.LastName}", $"{form.Email}");
+					MailboxAddress from = new MailboxAddress($"Advanced Duct Cleaning Website", "contact@dylanbenedict.dev");
 					emailMessage.From.Add(from);
 
 					MailboxAddress to = new MailboxAddress("Advanced Duct Cleaning LLC", "advancedductcleaning1@gmail.com");
 					emailMessage.To.Add(to);
 
-					emailMessage.Subject = "Quote Request";
+					emailMessage.Subject = "Quote Requested";
 
                          var body = new TextPart("html")
                          {
@@ -32,14 +32,14 @@ namespace Advanced_Duct_Cleaning_API.Controllers
                                    <head>
                                        <style>
                                          .requestContainer {{
-                                           display: inline-block;
+                                           display: block;
                                            width: 100%;
                                            max-width: 100%;
                                          }}
 
                                          .requestContainer .field {{
-                                           display: inline-block;
-                                           width: 50%;
+                                           display: block;
+                                           width: 100%;
                                            word-break: break-all;
                                            margin-bottom: 15px;
                                          }} 
@@ -69,7 +69,7 @@ namespace Advanced_Duct_Cleaning_API.Controllers
                                          </div>
                                          <div class=""field"">
                                            <div class=""label"">Email</div>
-                                           <div class=""value"">{form.Email}</div>
+                                           <div class=""value""><a href=""mailto:{form.Email}"">{form.Email}</a></div>
                                          </div>
                                          <div class=""field"">
                                            <div class=""label"">Address</div>
@@ -89,11 +89,15 @@ namespace Advanced_Duct_Cleaning_API.Controllers
                                          </div>
                                          <div class=""field"">
                                            <div class=""label"">How Did You Find Us</div>
-                                           <div class=""value"">{form.How}</div>
+                                           <div class=""value"">{form.How ?? "N/A"}</div>
                                          </div>
                                          <div class=""field"">
                                            <div class=""label"">Service Desired</div>
-                                           <div class=""value"">{form.ServiceDesired}</div>
+                                           <div class=""value"">
+                                             <ul>
+                                                  <li>{string.Join("</li><li>", form.ServiceDesired)}</li>
+                                             </ul>
+                                           </div>
                                          </div>
                                          <div class=""field"">
                                            <div class=""label"">Type of Property</div>
@@ -111,16 +115,21 @@ namespace Advanced_Duct_Cleaning_API.Controllers
                                            <div class=""label"">Foundation</div>
                                            <div class=""value"">{form.Foundation}</div>
                                          </div>
+                                         <div class=""field"">
+                                           <div class=""label"">Square Footage</div>
+                                           <div class=""value"">{form.SquareFootage} ft<sup>2</sup></div>
+                                         </div>
                                        </div>
+                                       <p>***Do not reply to this email. Send a new email to <a href=""mailto:{form.Email}"">{form.Email}</a>***</p>
                                    </body>
                               </html>"
 				     };
 
-                         emailMessage.Body = body;
+                          emailMessage.Body = body;
 
 					using (var client = new MailKit.Net.Smtp.SmtpClient())
 					{
-						client.Connect("hgws5.win.hostgator.com", 587, false);
+						client.Connect("hgws5.win.hostgator.com", 25, false);
 						client.Authenticate("contact@dylanbenedict.dev", "628?\\^*BLtaqp");
 						await client.SendAsync(emailMessage);
 						client.Disconnect(true);
