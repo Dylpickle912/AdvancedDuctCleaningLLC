@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiUrl: 'https://localhost:44384/'
+  apiUrl: 'https://advanced-duct-cleaning-llc-API.dylanbenedict.dev/'
 };
