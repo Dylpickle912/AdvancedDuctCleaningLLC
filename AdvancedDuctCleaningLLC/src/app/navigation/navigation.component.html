@@ -7,6 +7,7 @@
     <i class="caret fa-xs fa-solid fa-angle-down"></i>
     <div class="dropdownMenu">
       <a class="item" [routerLink]="[ '/our-company' ]" routerLinkActive="activeDropdownLink" [routerLinkActiveOptions]="{ exact: true }">Our Company</a>
+      <a class="item" [routerLink]="[ '/Scott-Crull' ]" routerLinkActive="activeDropdownLink" [routerLinkActiveOptions]="{ exact: true }">Meet Scott Crull</a>
       <a class="item" [routerLink]="[ '/steps' ]" routerLinkActive="activeDropdownLink" [routerLinkActiveOptions]="{ exact: true }">Steps to a Professional Air Duct Cleaning</a>
       <a class="item" [routerLink]="[ '/before-and-after' ]" routerLinkActive="activeDropdownLink" [routerLinkActiveOptions]="{ exact: true }">Before and After Air Duct Cleaning</a>
     </div>
@@ -36,6 +37,7 @@
       <i class="caret fa-xs fa-solid fa-angle-down"></i>
       <div class="dropdownMenu noHover" [ngClass]="{ 'dropdownMenuActive': showOurCompanyMenu }" (click)="$event.stopPropagation()">
         <a class="item" [routerLink]="[ '/our-company' ]" (click)="closeMenu()">Our Company</a>
+        <a class="item" [routerLink]="[ '/Scott-Crull' ]" (click)="closeMenu()">Meet Scott Crull</a>
         <a class="item" [routerLink]="[ '/steps' ]" (click)="closeMenu()">Steps to a Professional Air Duct Cleaning</a>
         <a class="item" [routerLink]="[ '/before-and-after' ]" (click)="closeMenu()">Before and After Air Duct Cleaning</a>
         <div class="item close" (click)="showOurCompanyMenu = false">

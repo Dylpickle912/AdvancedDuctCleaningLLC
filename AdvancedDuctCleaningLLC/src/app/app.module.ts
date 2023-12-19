@@ -33,6 +33,7 @@ import {HashLocationStrategy, LocationStrategy} from "@angular/common";
 import { MobileComponent } from './mobile/mobile.component';
 import { MainVideoComponent } from './mobile/main-video/main-video.component';
 import { TestimonialComponent } from './mobile/testimonial/testimonial.component';
+import { MeetOurOwnerComponent } from './pages/meet-our-owner/meet-our-owner.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { TestimonialComponent } from './mobile/testimonial/testimonial.component
     AsbestosComponent,
     MobileComponent,
     MainVideoComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    MeetOurOwnerComponent
   ],
   imports: [
     BrowserModule,

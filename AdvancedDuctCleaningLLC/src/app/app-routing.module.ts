@@ -12,10 +12,12 @@ import {IndoorAirAndYourHealthComponent} from "./pages/indoor-air-and-your-healt
 import {ScamAlertComponent} from "./pages/scam-alert/scam-alert.component";
 import {RequestQuoteComponent} from "./pages/request-quote/request-quote.component";
 import {AsbestosComponent} from "./pages/asbestos/asbestos.component";
+import {MeetOurOwnerComponent} from "./pages/meet-our-owner/meet-our-owner.component";
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent, title: 'Advanced Duct Cleaning LLC', pathMatch: 'full' },
   { path: 'our-company', component: OurCompanyComponent, title: 'Our Company', pathMatch: 'full' },
+  { path: 'Scott-Crull', component: MeetOurOwnerComponent, title: 'Scott Crull', pathMatch: 'full' },
   { path: 'steps', component: StepsComponent, title: 'Steps to a Professional Air Duct Cleaning', pathMatch: 'full' },
   { path: 'before-and-after', component: BeforeAndAfterComponent, title: 'Before and After', pathMatch: 'full' },
   { path: 'why-clean-air-ducts', component: WhyCleanAirDuctsComponent, title: 'Why Clean Air Ducts?', pathMatch: 'full' },
