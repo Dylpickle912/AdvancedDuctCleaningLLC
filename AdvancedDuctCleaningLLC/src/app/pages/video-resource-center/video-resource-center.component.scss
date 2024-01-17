@@ -31,15 +31,6 @@
     width: 100%;
     row-gap: 15px;
 
-    p {
-      color: $grey;
-      font: {
-        size: 14px;
-        weight: 600;
-      }
-      line-height: 1.7em;
-    }
-
     .field {
       display: grid;
       width: 100%;
@@ -129,15 +120,6 @@
             width: 100%;
             row-gap: 10px;
 
-            p {
-              color: $nearBlack;
-              font: {
-                weight: 400;
-                size: 14px;
-              }
-              line-height: 1.7em;
-            }
-
             img {
               @include alignCenter;
               width: 200px;
@@ -185,4 +167,13 @@
       }
     }
   }
+}
+
+p {
+  font: {
+    size: 14px;
+    weight: 500;
+  }
+  color: $grey;
+  line-height: 1.7em;
 }

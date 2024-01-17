@@ -1,5 +1,14 @@
 @import '../../../variables';
 
+p {
+  font: {
+    size: 14px;
+    weight: 500;
+  }
+  color: $grey;
+  line-height: 1.7em;
+}
+
 .content {
   padding: 25px 35px;
   @include alignCenter;

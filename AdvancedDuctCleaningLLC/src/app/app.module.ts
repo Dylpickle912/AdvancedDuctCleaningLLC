@@ -29,7 +29,7 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {HttpClientModule} from "@angular/common/http";
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { AsbestosComponent } from './pages/asbestos/asbestos.component';
-import {HashLocationStrategy, LocationStrategy} from "@angular/common";
+import {HashLocationStrategy, LocationStrategy, PathLocationStrategy} from "@angular/common";
 import { MobileComponent } from './mobile/mobile.component';
 import { MainVideoComponent } from './mobile/main-video/main-video.component';
 import { TestimonialComponent } from './mobile/testimonial/testimonial.component';
@@ -78,7 +78,7 @@ import { MeetOurOwnerComponent } from './pages/meet-our-owner/meet-our-owner.com
   providers: [
     {
       provide: LocationStrategy,
-      useClass: HashLocationStrategy
+      useClass: PathLocationStrategy
     },
     provideClientHydration()
   ],

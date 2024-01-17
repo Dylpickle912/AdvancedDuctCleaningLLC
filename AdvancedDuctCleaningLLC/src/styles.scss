@@ -133,18 +133,10 @@ h2 {
   .heading {
     display: grid;
     width: 100%;
-    padding: 0 55px;
+    padding: 1rem 55px;
 
     @media only screen and (max-width: 750px) {
-      padding: 0 20px;
-    }
-
-    p {
-      font: {
-        size: 14px;
-        weight: 500;
-      }
-      color: $grey;
+      padding: 1rem 20px;
     }
   }
 
@@ -153,4 +145,15 @@ h2 {
     flex-direction: column;
     width: 100%;
   }
+}
+
+h1 {
+  font: {
+    size: 14px;
+    weight: 500;
+  }
+  color: $grey;
+  line-height: 1.7em;
+  font-weight: bolder;
+  font-style: italic;
 }

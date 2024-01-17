@@ -11,8 +11,20 @@ body {
   flex-direction: column;
   width: 100%;
 
-  .mainImage {
+  .imageContainer {
     width: 100%;
+    position: relative;
+
+    h1 {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      color: $white;
+    }
+
+    .mainImage {
+      width: 100%;
+    }
   }
 
   .mainContainer {

@@ -5,12 +5,13 @@
   @include alignCenter;
   row-gap: 25px;
 
-  .title {
-    color: $nearBlack;
+  p {
     font: {
-      weight: 700;
-      size: 16px
+      size: 14px;
+      weight: 500;
     }
+    color: $grey;
+    line-height: 1.7em;
   }
 
   .videoContainer {

@@ -4,6 +4,15 @@
   padding: 25px !important;
 }
 
+p {
+  font: {
+    size: 14px;
+    weight: 500;
+  }
+  color: $grey;
+  line-height: 1.7em;
+}
+
 .container {
   display: grid;
   width: 100%;
