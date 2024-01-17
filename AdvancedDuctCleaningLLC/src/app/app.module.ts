@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import {BrowserModule, HammerModule} from '@angular/platform-browser';
+import {BrowserModule, HammerModule, provideClientHydration} from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -79,7 +79,8 @@ import { MeetOurOwnerComponent } from './pages/meet-our-owner/meet-our-owner.com
     {
       provide: LocationStrategy,
       useClass: HashLocationStrategy
-    }
+    },
+    provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })

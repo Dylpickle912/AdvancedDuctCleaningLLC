@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/advanced-duct-cleaning-llc",
+            "outputPath": "dist/AdvancedDuctCleaningLLC/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -70,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "AdvancedDuctCleaningLLC:build:production"
+              "buildTarget": "AdvancedDuctCleaningLLC:build:production"
             },
             "development": {
-              "browserTarget": "AdvancedDuctCleaningLLC:build:development"
+              "buildTarget": "AdvancedDuctCleaningLLC:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AdvancedDuctCleaningLLC:build"
+            "buildTarget": "AdvancedDuctCleaningLLC:build"
           }
         },
         "test": {
@@ -100,6 +100,60 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/AdvancedDuctCleaningLLC/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@angular-devkit/build-angular:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "AdvancedDuctCleaningLLC:build:development",
+              "serverTarget": "AdvancedDuctCleaningLLC:server:development"
+            },
+            "production": {
+              "browserTarget": "AdvancedDuctCleaningLLC:build:production",
+              "serverTarget": "AdvancedDuctCleaningLLC:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "AdvancedDuctCleaningLLC:build:production",
+              "serverTarget": "AdvancedDuctCleaningLLC:server:production"
+            },
+            "development": {
+              "browserTarget": "AdvancedDuctCleaningLLC:build:development",
+              "serverTarget": "AdvancedDuctCleaningLLC:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
