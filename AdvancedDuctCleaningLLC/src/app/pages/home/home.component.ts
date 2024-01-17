@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, HostListener, OnInit} from '@angular/core';
+import {AfterViewInit, Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import * as $ from 'jquery';
 import 'slick-carousel';
 import {Router} from "@angular/router";
@@ -8,7 +8,7 @@ import {Router} from "@angular/router";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
 
   public isMobile!: boolean;
 
@@ -47,5 +47,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   public checkIfIsMobile(size: number): void {
     this.isMobile = size < 500;
+  }
+
+  public ngOnDestroy() {
+    document.removeEventListener('resize', this.onResize);
   }
 }

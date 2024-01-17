@@ -1,17 +1,17 @@
-<div class="container" *ngIf="!isMobile; else mobile">
+<footer class="container" *ngIf="!isMobile; else mobile">
   <a [routerLink]="[ '/steps' ]">
-    <img src="assets/Images/10-Step.png">
+    <img src="assets/Images/10-Step.png" alt="10-Step.png">
   </a>
   <a [routerLink]="[ '/asbestos' ]">
-    <img src="assets/Images/Asbestos-Check.png">
+    <img src="assets/Images/Asbestos-Check.png" alt="Asbestos-Check.png">
   </a>
   <a [routerLink]="[ '/before-and-after' ]">
-    <img src="assets/Images/beforeafter.png">
+    <img src="assets/Images/beforeafter.png" alt="beforeafter.png">
   </a>
-</div>
+</footer>
 
 <ng-template #mobile>
-  <div class="mobileContainer">
+  <footer class="mobileContainer">
     Call or Text <a href="tel:7659149153">(765) 914-9153</a> for an Air Duct Cleaning Quote.
-  </div>
+  </footer>
 </ng-template>

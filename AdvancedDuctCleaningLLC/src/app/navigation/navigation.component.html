@@ -1,4 +1,4 @@
-<div class="container desktop">
+<nav class="container desktop">
   <a class="link" [routerLink]="[ '' ]" routerLinkActive="activeLink" [routerLinkActiveOptions]="{ exact: true }">
     <p class="linkLabel">Home</p>
   </a>
@@ -21,9 +21,9 @@
   <div class="link" [routerLink]="[ '/request-quote' ]" routerLinkActive="activeLink" [routerLinkActiveOptions]="{ exact: true }">
     <p class="linkLabel">Request a Quote</p>
   </div>
-</div>
+</nav>
 
-<div class="mobileContainer">
+<nav class="mobileContainer">
   <div class="accordionTab" (click)="toggleShowMenu()">
     <i class="accordionIcon fa-sharp fa-solid fa-bars"></i>
     <p class="accordionText">Menu</p>
@@ -56,4 +56,4 @@
       <p class="linkLabel">Request a Quote</p>
     </a>
   </div>
-</div>
+</nav>

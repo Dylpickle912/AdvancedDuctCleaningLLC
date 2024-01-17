@@ -1,5 +1,5 @@
 <ng-container *ngIf="!isMobile; else mobile">
-  <div class="container">
+  <header class="container">
     <a class="logo" [routerLink]="[ '' ]">
       <img src="assets/logo-transparent-background.png" alt="Logo">
     </a>
@@ -18,7 +18,7 @@
         <p>Get a Free Quote</p>
       </a>
     </div>
-  </div>
+  </header>
 </ng-container>
 
 <ng-template #mobile>

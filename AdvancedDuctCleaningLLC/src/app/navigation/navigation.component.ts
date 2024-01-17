@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 
 @Component({
@@ -6,7 +6,7 @@ import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
-export class NavigationComponent implements OnInit {
+export class NavigationComponent implements OnInit, OnDestroy {
   public showMenu = false;
   public showOurCompanyMenu = false;
   public isMobile = false;
@@ -55,5 +55,9 @@ export class NavigationComponent implements OnInit {
 
   public toggleShowOurCompanyMenu(): void {
     this.showOurCompanyMenu = !this.showOurCompanyMenu;
+  }
+
+  public ngOnDestroy() {
+    document.removeEventListener('resize', this.onResize);
   }
 }
