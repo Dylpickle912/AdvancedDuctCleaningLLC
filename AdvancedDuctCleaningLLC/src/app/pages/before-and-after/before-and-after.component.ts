@@ -3,9 +3,10 @@ import * as $ from 'jquery';
 import 'slick-carousel';
 
 @Component({
-  selector: 'app-before-and-after',
-  templateUrl: './before-and-after.component.html',
-  styleUrls: ['./before-and-after.component.scss']
+    selector: 'app-before-and-after',
+    templateUrl: './before-and-after.component.html',
+    styleUrls: ['./before-and-after.component.scss'],
+    standalone: true
 })
 export class BeforeAndAfterComponent implements OnInit {
   public ngOnInit() {

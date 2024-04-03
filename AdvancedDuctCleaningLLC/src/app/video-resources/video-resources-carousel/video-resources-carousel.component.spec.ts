@@ -8,8 +8,8 @@ describe('VideoResourcesCarouselComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VideoResourcesCarouselComponent ]
-    })
+    imports: [VideoResourcesCarouselComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(VideoResourcesCarouselComponent);

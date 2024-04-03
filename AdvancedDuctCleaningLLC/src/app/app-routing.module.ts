@@ -1,7 +1,6 @@
-import {PreloadAllModules, RouterModule, Routes} from "@angular/router";
+import {Routes} from "@angular/router";
 import {HomeComponent} from "./pages/home/home.component";
 import {NotFoundComponent} from "./pages/not-found/not-found.component";
-import {NgModule} from "@angular/core";
 import {OurCompanyComponent} from "./pages/our-company/our-company.component";
 import {StepsComponent} from "./pages/steps/steps.component";
 import {BeforeAndAfterComponent} from "./pages/before-and-after/before-and-after.component";
@@ -14,7 +13,7 @@ import {RequestQuoteComponent} from "./pages/request-quote/request-quote.compone
 import {AsbestosComponent} from "./pages/asbestos/asbestos.component";
 import {MeetOurOwnerComponent} from "./pages/meet-our-owner/meet-our-owner.component";
 
-const appRoutes: Routes = [
+export const appRoutes: Routes = [
   { path: '', component: HomeComponent, title: 'Advanced Duct Cleaning LLC', pathMatch: 'full' },
   { path: 'our-company', component: OurCompanyComponent, title: 'Our Company', pathMatch: 'full' },
   { path: 'Scott-Crull', component: MeetOurOwnerComponent, title: 'Scott Crull', pathMatch: 'full' },
@@ -29,18 +28,3 @@ const appRoutes: Routes = [
   { path: 'asbestos', component: AsbestosComponent, title: 'Asbestos', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent, title: 'Page Not Found', pathMatch: 'full' }
 ];
-
-@NgModule({
-  imports: [
-    RouterModule.forRoot(appRoutes,
-      {
-        preloadingStrategy: PreloadAllModules,
-        scrollPositionRestoration: 'enabled'
-      })
-  ],
-  exports: [RouterModule]
-})
-
-export class AppRoutingModule {
-
-}

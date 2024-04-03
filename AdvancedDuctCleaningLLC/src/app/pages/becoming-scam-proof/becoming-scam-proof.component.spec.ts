@@ -8,8 +8,8 @@ describe('BecomingScamProofComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BecomingScamProofComponent ]
-    })
+    imports: [BecomingScamProofComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(BecomingScamProofComponent);

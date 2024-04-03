@@ -3,9 +3,10 @@ import * as $ from 'jquery';
 import 'slick-carousel';
 
 @Component({
-  selector: 'app-steps',
-  templateUrl: './steps.component.html',
-  styleUrls: ['./steps.component.scss']
+    selector: 'app-steps',
+    templateUrl: './steps.component.html',
+    styleUrls: ['./steps.component.scss'],
+    standalone: true
 })
 export class StepsComponent implements OnInit {
   public ngOnInit() {

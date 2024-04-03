@@ -1,14 +1,22 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+import { FormBuilder, FormControl, FormGroup, Validators, FormsModule, ReactiveFormsModule } from "@angular/forms";
 import {ContactService, DesiredService} from "../../contact.service";
 import {catchError, tap, throwError} from "rxjs";
 import {HttpErrorResponse} from "@angular/common/http";
 import {Router} from "@angular/router";
+import { SpinnerComponent } from '../../components/spinner/spinner.component';
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { NgIf, NgFor, NgClass } from '@angular/common';
 
 @Component({
-  selector: 'app-request-quote',
-  templateUrl: './request-quote.component.html',
-  styleUrls: ['./request-quote.component.scss']
+    selector: 'app-request-quote',
+    templateUrl: './request-quote.component.html',
+    styleUrls: ['./request-quote.component.scss'],
+    standalone: true,
+    imports: [NgIf, FormsModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatSelectModule, NgFor, MatOptionModule, NgClass, SpinnerComponent]
 })
 export class RequestQuoteComponent implements OnInit {
 

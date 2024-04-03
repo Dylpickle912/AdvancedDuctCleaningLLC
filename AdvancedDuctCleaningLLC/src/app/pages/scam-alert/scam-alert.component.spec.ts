@@ -8,8 +8,8 @@ describe('ScamAlertComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ScamAlertComponent ]
-    })
+    imports: [ScamAlertComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(ScamAlertComponent);

@@ -3,9 +3,10 @@ import * as $ from 'jquery';
 import 'slick-carousel';
 
 @Component({
-  selector: 'app-video-resources-carousel',
-  templateUrl: './video-resources-carousel.component.html',
-  styleUrls: ['./video-resources-carousel.component.scss']
+    selector: 'app-video-resources-carousel',
+    templateUrl: './video-resources-carousel.component.html',
+    styleUrls: ['./video-resources-carousel.component.scss'],
+    standalone: true
 })
 export class VideoResourcesCarouselComponent implements OnInit {
   public ngOnInit() {

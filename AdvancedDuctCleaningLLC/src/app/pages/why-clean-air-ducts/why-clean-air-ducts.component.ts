@@ -3,9 +3,10 @@ import * as $ from 'jquery';
 import 'slick-carousel';
 
 @Component({
-  selector: 'app-why-clean-air-ducts',
-  templateUrl: './why-clean-air-ducts.component.html',
-  styleUrls: ['./why-clean-air-ducts.component.scss']
+    selector: 'app-why-clean-air-ducts',
+    templateUrl: './why-clean-air-ducts.component.html',
+    styleUrls: ['./why-clean-air-ducts.component.scss'],
+    standalone: true
 })
 export class WhyCleanAirDuctsComponent implements OnInit {
   public ngOnInit() {

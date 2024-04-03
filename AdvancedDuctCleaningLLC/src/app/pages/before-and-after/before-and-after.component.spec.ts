@@ -8,8 +8,8 @@ describe('BeforeAndAfterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BeforeAndAfterComponent ]
-    })
+    imports: [BeforeAndAfterComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(BeforeAndAfterComponent);

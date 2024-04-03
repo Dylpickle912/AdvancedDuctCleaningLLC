@@ -2,11 +2,16 @@ import {AfterViewInit, Component, HostListener, OnDestroy, OnInit} from '@angula
 import * as $ from 'jquery';
 import 'slick-carousel';
 import {Router} from "@angular/router";
+import { MobileComponent } from '../../mobile/mobile.component';
+import { VideoResourcesCarouselComponent } from '../../video-resources/video-resources-carousel/video-resources-carousel.component';
+import { NgIf } from '@angular/common';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss'],
+    standalone: true,
+    imports: [NgIf, VideoResourcesCarouselComponent, MobileComponent]
 })
 export class HomeComponent implements OnInit, AfterViewInit, OnDestroy {
 
