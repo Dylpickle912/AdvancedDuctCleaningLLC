@@ -7,21 +7,21 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAl95TlyPi3UG6/jiIzYrmwQAAAAACAAAAAAAQZgAAAAEAACAAAABUK8NUiV+syoRcXGz+DvYHTp+vAW1O+vGNP5UaZ80UvgAAAAAOgAAAAAIAACAAAAD20AV5hTluztP7vNdL0CvY5GV18AWES8hXa4BaMG3y2jAAAAAN3M8TJhudYkeqbeVq2H7CYh8VInLEsorQq9m9799w5WfBv0s0WoPy2rEoFk9QzsZAAAAAecqUuiL9tfuW0ZJOiHAVXqUwRMAFmvW1E6k8ulNPdrHd8hXvawNvUFFdHebwf+unw2tpdc/UoBt3T8ZYXxmB3A==</EncryptedPassword>
     <_PublishTargetUrl>ftp://192.185.7.6/advanced-duct-cleaning-llc-API.dylanbenedict.dev</_PublishTargetUrl>
-    <History>True|2023-05-06T14:40:51.7339085Z;True|2023-05-05T17:06:45.1512324-04:00;False|2023-05-05T17:06:35.7505110-04:00;True|2023-05-05T17:03:55.0321944-04:00;False|2023-05-05T17:03:40.9113291-04:00;True|2023-05-05T17:02:19.8611399-04:00;True|2023-05-05T16:50:13.3332721-04:00;True|2023-05-05T16:39:30.8321173-04:00;True|2023-05-05T15:25:49.0659122-04:00;False|2023-05-05T15:25:37.4763762-04:00;True|2023-05-05T15:17:35.3647259-04:00;False|2023-05-05T15:17:12.5258877-04:00;False|2023-05-05T15:16:59.0908017-04:00;False|2023-05-05T15:16:55.3184315-04:00;False|2023-05-05T15:16:41.6615865-04:00;True|2023-05-05T15:08:42.7746552-04:00;True|2023-05-05T15:00:54.6002739-04:00;False|2023-05-05T15:00:37.5059595-04:00;True|2023-05-05T14:22:33.6358102-04:00;</History>
+    <History>True|2023-10-15T19:01:37.0048346Z;True|2023-05-06T10:40:51.7339085-04:00;True|2023-05-05T17:06:45.1512324-04:00;False|2023-05-05T17:06:35.7505110-04:00;True|2023-05-05T17:03:55.0321944-04:00;False|2023-05-05T17:03:40.9113291-04:00;True|2023-05-05T17:02:19.8611399-04:00;True|2023-05-05T16:50:13.3332721-04:00;True|2023-05-05T16:39:30.8321173-04:00;True|2023-05-05T15:25:49.0659122-04:00;False|2023-05-05T15:25:37.4763762-04:00;True|2023-05-05T15:17:35.3647259-04:00;False|2023-05-05T15:17:12.5258877-04:00;False|2023-05-05T15:16:59.0908017-04:00;False|2023-05-05T15:16:55.3184315-04:00;False|2023-05-05T15:16:41.6615865-04:00;True|2023-05-05T15:08:42.7746552-04:00;True|2023-05-05T15:00:54.6002739-04:00;False|2023-05-05T15:00:37.5059595-04:00;True|2023-05-05T14:22:33.6358102-04:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="Advanced Duct Cleaning API.deps.json">
-      <publishTime>05/06/2023 10:40:47</publishTime>
+      <publishTime>10/15/2023 15:01:27</publishTime>
     </File>
     <File Include="Advanced Duct Cleaning API.dll">
-      <publishTime>05/06/2023 10:40:47</publishTime>
+      <publishTime>10/15/2023 15:01:26</publishTime>
     </File>
     <File Include="Advanced Duct Cleaning API.exe">
-      <publishTime>05/06/2023 10:40:47</publishTime>
+      <publishTime>10/15/2023 15:01:26</publishTime>
     </File>
     <File Include="Advanced Duct Cleaning API.pdb">
-      <publishTime>05/06/2023 10:40:47</publishTime>
+      <publishTime>10/15/2023 15:01:26</publishTime>
     </File>
     <File Include="Advanced Duct Cleaning API.runtimeconfig.json">
       <publishTime>05/05/2023 14:22:21</publishTime>
@@ -60,7 +60,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>01/24/2023 00:40:46</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>05/06/2023 10:40:48</publishTime>
+      <publishTime>10/15/2023 15:01:30</publishTime>
     </File>
   </ItemGroup>
 </Project>

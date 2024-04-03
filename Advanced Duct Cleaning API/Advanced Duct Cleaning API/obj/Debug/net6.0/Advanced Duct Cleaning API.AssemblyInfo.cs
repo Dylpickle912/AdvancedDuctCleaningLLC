@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Advanced Duct Cleaning API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+492a188c72558a41e5d97c73f90e34cc69e162c2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Advanced Duct Cleaning API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Advanced Duct Cleaning API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
