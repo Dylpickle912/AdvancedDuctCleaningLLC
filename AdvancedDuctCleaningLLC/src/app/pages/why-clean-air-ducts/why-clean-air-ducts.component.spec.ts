@@ -8,8 +8,8 @@ describe('WhyCleanAirDuctsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [WhyCleanAirDuctsComponent]
-})
+      declarations: [ WhyCleanAirDuctsComponent ]
+    })
     .compileComponents();
 
     fixture = TestBed.createComponent(WhyCleanAirDuctsComponent);

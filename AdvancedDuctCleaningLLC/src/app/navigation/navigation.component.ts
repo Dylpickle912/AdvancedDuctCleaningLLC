@@ -1,13 +1,10 @@
 import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router, RouterLinkActive, RouterLink } from "@angular/router";
-import { NgClass } from '@angular/common';
+import {ActivatedRoute, NavigationEnd, Router} from "@angular/router";
 
 @Component({
-    selector: 'app-navigation',
-    templateUrl: './navigation.component.html',
-    styleUrls: ['./navigation.component.scss'],
-    standalone: true,
-    imports: [RouterLinkActive, RouterLink, NgClass]
+  selector: 'app-navigation',
+  templateUrl: './navigation.component.html',
+  styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit, OnDestroy {
   public showMenu = false;

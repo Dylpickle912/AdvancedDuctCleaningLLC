@@ -1,13 +1,9 @@
 import { Component } from '@angular/core';
-import { NgIf } from '@angular/common';
-import { MatExpansionModule } from '@angular/material/expansion';
 
 @Component({
-    selector: 'app-partners-in-protection',
-    templateUrl: './partners-in-protection.component.html',
-    styleUrls: ['./partners-in-protection.component.scss'],
-    standalone: true,
-    imports: [MatExpansionModule, NgIf]
+  selector: 'app-partners-in-protection',
+  templateUrl: './partners-in-protection.component.html',
+  styleUrls: ['./partners-in-protection.component.scss']
 })
 export class PartnersInProtectionComponent {
   public isOpen1 = false;

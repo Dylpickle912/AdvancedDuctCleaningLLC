@@ -1,14 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import * as $ from 'jquery';
-import { RouterLink } from '@angular/router';
 import 'slick-carousel'
 
 @Component({
-    selector: 'app-video-resource-center',
-    templateUrl: './video-resource-center.component.html',
-    styleUrls: ['./video-resource-center.component.scss'],
-    standalone: true,
-    imports: [RouterLink]
+  selector: 'app-video-resource-center',
+  templateUrl: './video-resource-center.component.html',
+  styleUrls: ['./video-resource-center.component.scss']
 })
 export class VideoResourceCenterComponent implements OnInit {
   public ngOnInit() {

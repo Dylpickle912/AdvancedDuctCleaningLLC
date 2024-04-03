@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 import {Meta} from "@angular/platform-browser";
 
 @Component({
-    selector: 'app-meet-our-owner',
-    templateUrl: './meet-our-owner.component.html',
-    styleUrls: ['./meet-our-owner.component.scss'],
-    standalone: true
+  selector: 'app-meet-our-owner',
+  templateUrl: './meet-our-owner.component.html',
+  styleUrls: ['./meet-our-owner.component.scss']
 })
 export class MeetOurOwnerComponent {
 

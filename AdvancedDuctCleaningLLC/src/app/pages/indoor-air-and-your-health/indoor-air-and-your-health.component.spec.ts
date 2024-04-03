@@ -8,8 +8,8 @@ describe('IndoorAirAndYourHealthComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-    imports: [IndoorAirAndYourHealthComponent]
-})
+      declarations: [ IndoorAirAndYourHealthComponent ]
+    })
     .compileComponents();
 
     fixture = TestBed.createComponent(IndoorAirAndYourHealthComponent);
